@@ -1,46 +1,46 @@
 const express = require('express');
 const router = express.Router();
-const { Category, Item } = require('../models');
+const { RootCategory } = require('../models');
 
-// GET all categories
+// GET all rootCategories
 router.get('/', async (req, res) => {
   try {
-    const categories = await Category.findAll();
-    res.json(categories);
+    const rootCategories = await RootCategory.findAll();
+    res.json(rootCategories);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-// GET category by ID
+// GET rootCategory by ID
 router.get('/:id', async (req, res) => {
   try {
-    const category = await Category.findByPk(req.params.id, { include: Item });
-    if (!category) {
-      return res.status(404).json({ error: 'Category not found' });
+    const rootCategory = await RootCategory.findByPk(req.params.id, { include: Item });
+    if (!rootCategory) {
+      return res.status(404).json({ error: 'RootCategory not found' });
     }
-    res.json(category);
+    res.json(rootCategory);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-// POST create a new category
+// POST create a new rootCategory
 router.post('/', async (req, res) => {
   try {
     const { name } = req.body;
-    const newCategory = await Category.create({ name });
+    const newCategory = await RootCategory.create({ name });
     res.status(201).json(newCategory);
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
 });
 
-// PUT update a category
+// PUT update a rootCategory
 router.put('/:id', async (req, res) => {
   try {
     const { name } = req.body;
-    const updatedCategory = await Category.update(
+    const updatedCategory = await RootCategory.update(
       { name },
       { where: { id: req.params.id } }
     );
@@ -50,11 +50,11 @@ router.put('/:id', async (req, res) => {
   }
 });
 
-// DELETE a category
+// DELETE a rootCategory
 router.delete('/:id', async (req, res) => {
   try {
-    await Category.destroy({ where: { id: req.params.id } });
-    res.json({ message: 'Category deleted' });
+    await RootCategory.destroy({ where: { id: req.params.id } });
+    res.json({ message: 'RootCategory deleted' });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
