@@ -4,8 +4,13 @@ const recipeRoutes = require('./routes/recipes');
 const itemRecipeRoutes = require('./routes/itemrecipes');
 const averageRoutes = require('./routes/itemsaverageprice');
 const itemRoutes = require('./routes/items');
+const cors = require('cors');
 
 const app = express();
+
+app.use(cors({
+    origin: 'http://localhost:3333',
+  }));
 app.use(express.json());
 app.use('/items', itemRoutes);
 app.use('/categories', categoryRoutes);
