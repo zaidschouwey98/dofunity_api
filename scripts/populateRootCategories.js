@@ -19,7 +19,7 @@ async function fetchAndPopulate() {
             },
           });
     }
-    console.log(`Data from https://api.dofusdb.fr/item-types inserted successfully!`);
+    console.log(`Data from https://api.dofusdb.fr/item-super-types inserted successfully!`);
   } catch (err) {
     console.error('Error fetching or inserting data:', err.message);
   }
