@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Item, Category, ItemsAveragePrice } = require('../models');
+const { Item, Category, ItemsAveragePrice, RootCategory } = require('../models');
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -34,6 +34,18 @@ router.get('/items/average-prices', async (req, res) => {
           model: ItemsAveragePrice,
           as: 'averagePrices', // Utiliser l'alias défini dans le modèle
           attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'], // Champs nécessaires
+        },
+        {
+          model: Category,
+          as: 'category', // Alias défini dans `Item`
+          attributes: ['id', 'name'], // Champs nécessaires de `Category`
+          include: [
+            {
+              model: RootCategory,
+              as: 'rootCategory', // Alias défini dans `Category`
+              attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+            },
+          ],
         },
       ],
     });

@@ -4,7 +4,7 @@ module.exports = (sequelize, DataTypes) => {
   class Item extends Model {
     static associate(models) {
       // Un item appartient à une catégorie
-      this.belongsTo(models.Category, { foreignKey: 'categoryId' });
+      this.belongsTo(models.Category, { foreignKey: 'categoryId', as:'category' });
       // Un item a plusieurs prix moyens
       this.hasMany(models.ItemsAveragePrice, { foreignKey: 'itemId',as: 'averagePrices' });
       // Un item peut être lié à plusieurs recettes

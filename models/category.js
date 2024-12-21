@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
       // Une catégorie peut avoir plusieurs items
       this.hasMany(models.Item, { foreignKey: 'categoryId' });
 
-      this.belongsTo(models.RootCategory, { foreignKey: 'rootCategoryId' });
+      this.belongsTo(models.RootCategory, { foreignKey: 'rootCategoryId', as:'rootCategory' });
     }
   }
   Category.init(
