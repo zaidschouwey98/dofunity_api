@@ -5,6 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     static associate(models) {
       // Une catégorie peut avoir plusieurs items
       this.hasMany(models.Item, { foreignKey: 'categoryId' });
+
+      this.belongsTo(models.RootCategory, { foreignKey: 'rootCategoryId' });
     }
   }
   Category.init(
@@ -18,6 +20,10 @@ module.exports = (sequelize, DataTypes) => {
         type: DataTypes.STRING,
         allowNull: false,
       },
+      rootCategoryId:{
+        type: DataTypes.INTEGER,
+        allowNull:true,
+      }
     },
     {
       sequelize,
