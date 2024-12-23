@@ -4,11 +4,11 @@ const { Item,Category } = require('../models');
 async function fetchAndPopulate() {
     const items = [];
     let skip = 0; // Début de la pagination
-    const limit = 100; // Nombre d'items à récupérer par requête
+    const limit = 50; // Nombre d'items à récupérer par requête
     try {
 
-        const maxSkip = 19900;
-        for (skip = 0; skip < maxSkip; skip += 100) {
+        const maxSkip = 19850;
+        for (skip = 0; skip <= maxSkip; skip += 50) {
             console.log(`Fetching items with skip=${skip} and limit=${limit}...`);
 
             // Appel API avec pagination
@@ -34,11 +34,6 @@ async function fetchAndPopulate() {
             // Chercher la catégorie dans la base
             let category = await Category.findOne({ where: { id: item.type?.id } });
 
-            // Utiliser une catégorie par défaut si la catégorie est inexistante
-            if (category == null) {
-                category = { id: 54 }; // ID de la catégorie par défaut
-            }
-
             // Insérer l'item dans la base
             await Item.findOrCreate({
                 where: { id: item.id },
@@ -49,6 +44,8 @@ async function fetchAndPopulate() {
                     categoryId: category.id, // Associer l'item à la catégorie
                 },
             });
+
+
 
             console.log(`Inserted item: ${item.name?.fr}`);
         } catch (err) {
