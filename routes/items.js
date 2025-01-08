@@ -24,14 +24,20 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-router.get('/items/recipes', async (req, res) => {
+
+router.get('/:id/recipe', async (req, res) => {
+  const { id } = req.params;
+
   try {
-    const items = await Item.findAll({
+    const item = await Item.findOne({
+      where: { id }, // Trouver l'item par son ID
       include: [
         {
           model: ItemsAveragePrice,
           as: 'averagePrices', // Alias défini dans Item
-          attributes: ['averagePrice'],
+          attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+          limit: 1, // Récupérer uniquement le dernier prix moyen
+          order: [['createdAt', 'DESC']], // Trier par date décroissante
         },
         {
           model: Recipe, // Relation avec les recettes
@@ -48,7 +54,58 @@ router.get('/items/recipes', async (req, res) => {
                     {
                       model: ItemsAveragePrice,
                       as: 'averagePrices',
-                      attributes: ['averagePrice'],
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1, // Récupérer uniquement le dernier prix moyen
+                      order: [['createdAt', 'DESC']], // Trier par date décroissante
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+
+    if (!item) {
+      return res.status(404).json({ error: 'Item not found' });
+    }
+
+    res.json(item);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/items/recipes', async (req, res) => {
+  try {
+    const items = await Item.findAll({
+      include: [
+        {
+          model: ItemsAveragePrice,
+          as: 'averagePrices', // Alias défini dans Item
+          attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+          limit: 1, // Récupérer uniquement le dernier prix
+          order: [['createdAt', 'DESC']], // Trier par date de création décroissante
+        },
+        {
+          model: Recipe, // Relation avec les recettes
+          as: 'ResultRecipes',
+          include: [
+            {
+              model: ItemRecipe, // Relation entre recette et ingrédients
+              as: 'Ingredients',
+              include: [
+                {
+                  model: Item, // Relation avec les items en tant qu'ingrédients
+                  as: 'Ingredient',
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1, // Récupérer uniquement le dernier prix
+                      order: [['createdAt', 'DESC']], // Trier par date de création décroissante
                     },
                   ],
                 },
