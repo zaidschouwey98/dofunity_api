@@ -3,9 +3,7 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class ItemRecipe extends Model {
     static associate(models) {
-      // Table de jointure entre Item et Recipe
-      this.belongsTo(models.Item, { foreignKey: 'itemId' });
-      this.belongsTo(models.Recipe, { foreignKey: 'recipeId' });
+
     }
   }
   ItemRecipe.init(
@@ -13,15 +11,24 @@ module.exports = (sequelize, DataTypes) => {
       id: {
         type: DataTypes.INTEGER,
         primaryKey: true,
-        allowNull: false,
-      },
-      itemId: {
-        type: DataTypes.INTEGER,
+        autoIncrement: true,
         allowNull: false,
       },
       recipeId: {
         type: DataTypes.INTEGER,
         allowNull: false,
+        references: {
+          model: 'Recipes',
+          key: 'id',
+        },
+      },
+      itemId: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+          model: 'Items',
+          key: 'id',
+        },
       },
       quantity: {
         type: DataTypes.INTEGER,
