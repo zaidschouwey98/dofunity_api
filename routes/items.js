@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Item, Category, ItemsAveragePrice, RootCategory } = require('../models');
+const { Item,ItemRecipe,Recipe, Category, ItemsAveragePrice, RootCategory } = require('../models');
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -24,7 +24,45 @@ router.get('/:id', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
-
+router.get('/items/recipes', async (req, res) => {
+  try {
+    const items = await Item.findAll({
+      include: [
+        {
+          model: ItemsAveragePrice,
+          as: 'averagePrices', // Alias défini dans Item
+          attributes: ['averagePrice'],
+        },
+        {
+          model: Recipe, // Relation avec les recettes
+          as: 'ResultRecipes',
+          include: [
+            {
+              model: ItemRecipe, // Relation entre recette et ingrédients
+              as: 'Ingredients',
+              include: [
+                {
+                  model: Item, // Relation avec les items en tant qu'ingrédients
+                  as: 'Ingredient',
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['averagePrice'],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
 router.get('/items/average-prices', async (req, res) => {
   try {
     // Récupérer tous les items avec leurs prix moyens associés

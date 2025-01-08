@@ -13,6 +13,8 @@ module.exports = (sequelize, DataTypes) => {
         as: 'Result',
         foreignKey: 'resultId',
       });
+      this.hasMany(models.ItemRecipe, { foreignKey: 'recipeId', as: 'Ingredients' });
+
     }
   }
   Recipe.init(

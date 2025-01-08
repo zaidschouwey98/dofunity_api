@@ -3,7 +3,11 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class ItemRecipe extends Model {
     static associate(models) {
+      // Relation avec Items (en tant qu'ingrédient)
+      this.belongsTo(models.Item, { as: 'Ingredient', foreignKey: 'itemId' });
 
+      // Relation avec Recipes (l'objet lié à une recette)
+      this.belongsTo(models.Recipe, { foreignKey: 'recipeId' });
     }
   }
   ItemRecipe.init(
