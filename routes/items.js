@@ -95,15 +95,15 @@ router.get('/:id/recipe', async (req, res) => {
                 {
                   model: Item, // Relation avec les items en tant qu'ingrédients
                   as: 'Ingredient',
-                  // include: [
-                  //   {
-                  //     model: ItemsAveragePrice,
-                  //     as: 'averagePrices',
-                  //     attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
-                  //     limit: 1, // Récupérer uniquement le dernier prix moyen
-                  //     order: [['createdAt', 'DESC']], // Trier par date décroissante
-                  //   },
-                  // ],
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1, // Récupérer uniquement le dernier prix moyen
+                      order: [['createdAt', 'DESC']], // Trier par date décroissante
+                    },
+                  ],
                 },
               ],
             },
