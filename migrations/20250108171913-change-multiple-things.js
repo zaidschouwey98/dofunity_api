@@ -3,6 +3,11 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up (queryInterface, Sequelize) {
+    await queryInterface.addColumn('Recipes','resultId', {
+      type: Sequelize.INTEGER,
+      onUpdate: 'CASCADE',
+      onDelete: 'SET NULL',
+    });
     await queryInterface.changeColumn('Recipes','resultId', {
       type: Sequelize.INTEGER,
       references: {
@@ -12,6 +17,7 @@ module.exports = {
       onUpdate: 'CASCADE',
       onDelete: 'SET NULL',
     });
+    await queryInterface.renameColumn('ItemRecipes', 'resultItem', 'recipeId');
 
 
     // Supprimer l'ancienne clé étrangère

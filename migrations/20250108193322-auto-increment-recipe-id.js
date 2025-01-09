@@ -4,7 +4,7 @@
 module.exports = {
   async up (queryInterface, Sequelize) {
     // Supprimer la contrainte de clé étrangère
-    await queryInterface.removeConstraint('ItemRecipes', 'ItemRecipes_Recipe_fkey');
+    await queryInterface.removeConstraint('ItemRecipes', 'ItemRecipes_itemId_fkey');
 
     // Modifier la colonne 'id' pour ajouter AUTO_INCREMENT
     await queryInterface.changeColumn('Recipes', 'id', {
