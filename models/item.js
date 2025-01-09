@@ -16,6 +16,10 @@ module.exports = (sequelize, DataTypes) => {
         through: models.ItemRecipe,
         foreignKey: 'itemId',
       });
+      this.hasMany(models.CharacteristicRune, {
+        foreignKey: 'runeId',
+        as: 'runeCharacteristics',
+      });
 
       // Un objet peut être le résultat d'une recette
       this.hasMany(models.Recipe, {

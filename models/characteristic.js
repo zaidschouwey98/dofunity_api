@@ -5,6 +5,10 @@ module.exports = (sequelize, DataTypes) => {
   class Characteristic extends Model {
     static associate(models) {
       // Définir les relations ici si nécessaire
+      this.hasMany(models.CharacteristicRune, {
+        foreignKey: 'characteristicId',
+        as: 'runes',
+      });
     }
   }
 
