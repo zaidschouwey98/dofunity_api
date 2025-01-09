@@ -1,6 +1,7 @@
 const express = require('express');
 const router = express.Router();
-const { Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory } = require('../models');
+const { Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
+const { sequelize } = require('../models'); // Importez Sequelize depuis models/index.js
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -21,6 +22,29 @@ router.get('/', async (req, res) => {
         },
       ],
     });
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /items/with-exactprice - Récupérer tous les items avec leur dernier exactPrice
+router.get('/items/with-exactprice', async (req, res) => {
+  try {
+    const items = await Item.findAll({
+      include: [
+        {
+          model: ExactPrice,
+          as: 'exactPrices', // Alias défini dans le modèle Item
+          attributes: ['id', 'exactPrice', 'createdAt'], // Retourner uniquement les champs nécessaires
+          limit: 1, // Retourner uniquement le dernier prix
+          order: [['createdAt', 'DESC']], // Trier par date décroissante
+        },
+      ],
+      // Filtrer les items pour n'inclure que ceux ayant un ExactPrice
+      where: sequelize.literal('(SELECT COUNT(*) FROM ExactPrices WHERE ExactPrices.itemId = Item.id) > 0'),
+    });
+
     res.json(items);
   } catch (err) {
     res.status(500).json({ error: err.message });
