@@ -5,7 +5,22 @@ const { Item,ItemRecipe,Recipe, Category, ItemsAveragePrice, RootCategory } = re
 // GET all items
 router.get('/', async (req, res) => {
   try {
-    const items = await Item.findAll({ include: Category });
+    const items = await Item.findAll({
+      include: [
+        {
+          model: Category,
+          as: 'category', // Alias défini dans `Item`
+          attributes: ['id', 'name'], // Champs nécessaires de `Category`
+          include: [
+            {
+              model: RootCategory,
+              as: 'rootCategory', // Alias défini dans `Category`
+              attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+            },
+          ],
+        },
+      ],
+    });
     res.json(items);
   } catch (err) {
     res.status(500).json({ error: err.message });
