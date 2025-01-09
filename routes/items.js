@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Item,ItemRecipe,Recipe, Category, ItemsAveragePrice, RootCategory } = require('../models');
+const { Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory } = require('../models');
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -30,7 +30,13 @@ router.get('/', async (req, res) => {
 // GET item by ID
 router.get('/:id', async (req, res) => {
   try {
-    const item = await Item.findByPk(req.params.id, { include: Category });
+    const item = await Item.findByPk(req.params.id,
+      {
+        Include: [{
+          model: Category,
+        }]
+      }
+    );
     if (!item) {
       return res.status(404).json({ error: 'Item not found' });
     }
@@ -182,14 +188,14 @@ router.get('/:itemId/average-prices', async (req, res) => {
     if (!item) {
       return res.status(404).json({ error: 'Item not found' });
     }
-  
+
     // Récupérer les prix moyens associés à cet item
     const averagePrices = await ItemsAveragePrice.findAll({
       where: { itemId: itemId },
       attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'], // Inclure les champs nécessaires
     });
 
-    res.status(200).json({item, averagePrices});
+    res.status(200).json({ item, averagePrices });
   } catch (err) {
     console.error('Error fetching average prices:', err.message);
     res.status(500).json({ error: err.message });
