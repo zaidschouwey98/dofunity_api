@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
+const { ItemCharacteristic,Characteristic, CharacteristicRune , Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
 const { sequelize } = require('../models'); // Importez Sequelize depuis models/index.js
 
 // GET all items
@@ -70,38 +70,65 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+
 router.get('/:id/recipe', async (req, res) => {
   const { id } = req.params;
 
   try {
     const item = await Item.findOne({
-      where: { id }, // Trouver l'item par son ID
+      where: { id },
       include: [
-        // {
-        //   model: ItemsAveragePrice,
-        //   as: 'averagePrices', // Alias défini dans Item
-        //   attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
-        //   limit: 1, // Récupérer uniquement le dernier prix moyen
-        //   order: [['createdAt', 'DESC']], // Trier par date décroissante
-        // },
         {
-          model: Recipe, // Relation avec les recettes
+          model: Recipe,
           as: 'ResultRecipes',
           include: [
             {
-              model: ItemRecipe, // Relation entre recette et ingrédients
+              model: ItemRecipe,
               as: 'Ingredients',
               include: [
                 {
-                  model: Item, // Relation avec les items en tant qu'ingrédients
+                  model: Item,
                   as: 'Ingredient',
                   include: [
                     {
                       model: ItemsAveragePrice,
                       as: 'averagePrices',
                       attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
-                      limit: 1, // Récupérer uniquement le dernier prix moyen
-                      order: [['createdAt', 'DESC']], // Trier par date décroissante
+                      limit: 1,
+                      order: [['createdAt', 'DESC']],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          model: ItemCharacteristic,
+          as: 'characteristics',
+          include: [
+            {
+              model: Characteristic,
+              as: 'characteristic',
+              attributes: ['id', 'name'],
+              include: [
+                {
+                  model: CharacteristicRune,
+                  as: 'runes',
+                  include: [
+                    {
+                      model: Item,
+                      as: 'rune',
+                      attributes: ['id', 'name'], // Charger 'density'
+                      include: [
+                        {
+                          model: ItemsAveragePrice,
+                          as: 'averagePrices',
+                          attributes: ['averagePrice'],
+                          limit: 1,
+                          order: [['createdAt', 'DESC']],
+                        },
+                      ],
                     },
                   ],
                 },
@@ -121,6 +148,8 @@ router.get('/:id/recipe', async (req, res) => {
     res.status(500).json({ error: err.message });
   }
 });
+
+
 
 router.get('/items/recipes', async (req, res) => {
   try {
