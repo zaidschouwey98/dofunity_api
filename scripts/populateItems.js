@@ -1,5 +1,5 @@
 const axios = require('axios');
-const { Item,Category } = require('../models');
+const { Item, Category, Characteristic, ItemCharacteristic } = require('../models');
 
 async function fetchAndPopulate() {
     const items = [];
@@ -7,7 +7,8 @@ async function fetchAndPopulate() {
     const limit = 50; // Nombre d'items à récupérer par requête
     try {
 
-        const maxSkip = 19850;
+        let maxSkip = 19850;
+        
         for (skip = 0; skip <= maxSkip; skip += 50) {
             console.log(`Fetching items with skip=${skip} and limit=${limit}...`);
 
@@ -45,7 +46,37 @@ async function fetchAndPopulate() {
                 },
             });
 
+            // Traitement des caractéristiques
+            if (item.effects && item.effects.length > 0) {
+                for (const effect of item.effects) {
+                    const characteristicId = effect.characteristic;
 
+                    // Vérifier si la characteristic existe
+                    if (characteristicId !== -1) {
+                        const characteristic = await Characteristic.findOne({
+                            where: { id: characteristicId },
+                        });
+
+                        if (characteristic) {
+                            // Créer le lien dans ItemCharacteristics
+                            await ItemCharacteristic.findOrCreate({
+                                where: {
+                                    itemId: item.id,
+                                    characteristicId: characteristic.id,
+                                    from: effect.from,
+                                    to: effect.to,
+                                },
+                                defaults: {
+                                    itemId: item.id,
+                                    characteristicId: characteristic.id,
+                                    from: effect.from,
+                                    to: effect.to,
+                                },
+                            });
+                        }
+                    }
+                }
+            }
 
             console.log(`Inserted item: ${item.name?.fr}`);
         } catch (err) {

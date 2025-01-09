@@ -3,6 +3,8 @@ const { Model } = require('sequelize');
 module.exports = (sequelize, DataTypes) => {
   class Item extends Model {
     static associate(models) {
+      this.hasMany(models.ItemCharacteristic, { foreignKey: 'itemId', as: 'characteristics' });
+
       // Un item appartient à une catégorie
       this.belongsTo(models.Category, { foreignKey: 'categoryId', as:'category' });
       // Un item a plusieurs prix moyens
