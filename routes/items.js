@@ -2,12 +2,43 @@ const express = require('express');
 const router = express.Router();
 const { ItemCharacteristic,Characteristic, CharacteristicRune , Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
 const { sequelize } = require('../models'); // Importez Sequelize depuis models/index.js
+const { where } = require('sequelize');
 
 // GET all items
 router.get('/', async (req, res) => {
   try {
+    // Récupérer les paramètres `offset` et `limit` de la requête
+    const offset = parseInt(req.query.offset, 10) || 0; // Par défaut, 0
+    const limit = parseInt(req.query.limit, 10) || 100;  // Par défaut, 10
     const items = await Item.findAll({
+      offset: offset, // Index de départ
+      limit: limit,   // Nombre d'items à retourner
       include: [
+        {
+          model: Recipe,
+          as: 'ResultRecipes',
+          include: [
+            {
+              model: ItemRecipe,
+              as: 'Ingredients',
+              include: [
+                {
+                  model: Item,
+                  as: 'Ingredient',
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1,
+                      order: [['createdAt', 'DESC']],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
         {
           model: Category,
           as: 'category', // Alias défini dans `Item`
@@ -17,6 +48,235 @@ router.get('/', async (req, res) => {
               model: RootCategory,
               as: 'rootCategory', // Alias défini dans `Category`
               attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+            },
+          ],
+        },
+        {
+          model: ItemCharacteristic,
+          as: 'characteristics',
+          include: [
+            {
+              model: Characteristic,
+              as: 'characteristic',
+              attributes: ['id', 'name'],
+              include: [
+                {
+                  model: CharacteristicRune,
+                  as: 'runes',
+                  include: [
+                    {
+                      model: Item,
+                      as: 'rune',
+                      attributes: ['id', 'name'], // Charger 'density'
+                      include: [
+                        {
+                          model: ItemsAveragePrice,
+                          as: 'averagePrices',
+                          attributes: ['averagePrice'],
+                          limit: 1,
+                          order: [['createdAt', 'DESC']],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/equipments/:id', async (req, res) => {
+  try {
+    // Récupérer les paramètres `offset` et `limit` de la requête
+    const rootCategoryId = req.params.id;
+    const offset = parseInt(req.query.offset, 10) || 0; // Par défaut, 0
+    const limit = parseInt(req.query.limit, 10) || 100;  // Par défaut, 10
+    const root = await RootCategory.findOne({
+      where: { id:rootCategoryId },
+      include: [
+        {
+          model: Category,
+          as: 'Categories',
+          attributes: ['id', 'name'],
+        }]
+    })
+    const categories = []
+    for(cat of root.Categories){
+      categories.push(cat.dataValues.id)
+    }
+
+    const items = await Item.findAll({
+      offset: offset, // Index de départ
+      limit: limit,   // Nombre d'items à retourner
+      where: {
+        categoryId: categories,
+      },
+      include: [
+        {
+          model: Recipe,
+          as: 'ResultRecipes',
+          include: [
+            {
+              model: ItemRecipe,
+              as: 'Ingredients',
+              include: [
+                {
+                  model: Item,
+                  as: 'Ingredient',
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1,
+                      order: [['createdAt', 'DESC']],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          model: Category,
+          as: 'category', // Alias défini dans `Item`
+          attributes: ['id', 'name'], // Champs nécessaires de `Category`
+          include: [
+            {
+              model: RootCategory,
+              as: 'rootCategory',
+              attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+            },
+          ],
+        },
+        {
+          model: ItemCharacteristic,
+          as: 'characteristics',
+          include: [
+            {
+              model: Characteristic,
+              as: 'characteristic',
+              attributes: ['id', 'name'],
+              include: [
+                {
+                  model: CharacteristicRune,
+                  as: 'runes',
+                  include: [
+                    {
+                      model: Item,
+                      as: 'rune',
+                      attributes: ['id', 'name'], // Charger 'density'
+                      include: [
+                        {
+                          model: ItemsAveragePrice,
+                          as: 'averagePrices',
+                          attributes: ['averagePrice'],
+                          limit: 1,
+                          order: [['createdAt', 'DESC']],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      ],
+    });
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/equipments', async (req, res) => {
+  try {
+    // Récupérer les paramètres `offset` et `limit` de la requête
+    const offset = parseInt(req.query.offset, 10) || 0; // Par défaut, 0
+    const limit = parseInt(req.query.limit, 10) || 100;  // Par défaut, 10
+    const EQUIPMENT_CATEGORY_IDS = [1,2,3,4,5,6,7,8,9,10,11,16,17,19,21,22,82]; // Exemple d'IDs pour les catégories d'équipements
+    const items = await Item.findAll({
+      where: {
+        categoryId: EQUIPMENT_CATEGORY_IDS, // Filtre les items par les catégories d'équipements
+      },
+      offset: offset, // Index de départ
+      limit: limit,   // Nombre d'items à retourner
+      include: [
+        {
+          model: Recipe,
+          as: 'ResultRecipes',
+          include: [
+            {
+              model: ItemRecipe,
+              as: 'Ingredients',
+              include: [
+                {
+                  model: Item,
+                  as: 'Ingredient',
+                  include: [
+                    {
+                      model: ItemsAveragePrice,
+                      as: 'averagePrices',
+                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                      limit: 1,
+                      order: [['createdAt', 'DESC']],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+        {
+          model: Category,
+          as: 'category', // Alias défini dans `Item`
+          attributes: ['id', 'name'], // Champs nécessaires de `Category`
+          include: [
+            {
+              model: RootCategory,
+              as: 'rootCategory', // Alias défini dans `Category`
+              attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+            },
+          ],
+        },
+        {
+          model: ItemCharacteristic,
+          as: 'characteristics',
+          include: [
+            {
+              model: Characteristic,
+              as: 'characteristic',
+              attributes: ['id', 'name'],
+              include: [
+                {
+                  model: CharacteristicRune,
+                  as: 'runes',
+                  include: [
+                    {
+                      model: Item,
+                      as: 'rune',
+                      attributes: ['id', 'name'], // Charger 'density'
+                      include: [
+                        {
+                          model: ItemsAveragePrice,
+                          as: 'averagePrices',
+                          attributes: ['averagePrice'],
+                          limit: 1,
+                          order: [['createdAt', 'DESC']],
+                        },
+                      ],
+                    },
+                  ],
+                },
+              ],
             },
           ],
         },
@@ -56,9 +316,78 @@ router.get('/:id', async (req, res) => {
   try {
     const item = await Item.findByPk(req.params.id,
       {
-        Include: [{
-          model: Category,
-        }]
+        include: [
+          {
+            model: Recipe,
+            as: 'ResultRecipes',
+            include: [
+              {
+                model: ItemRecipe,
+                as: 'Ingredients',
+                include: [
+                  {
+                    model: Item,
+                    as: 'Ingredient',
+                    include: [
+                      {
+                        model: ItemsAveragePrice,
+                        as: 'averagePrices',
+                        attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                        limit: 1,
+                        order: [['createdAt', 'DESC']],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+          {
+            model: Category,
+            as: 'category', // Alias défini dans `Item`
+            attributes: ['id', 'name'], // Champs nécessaires de `Category`
+            include: [
+              {
+                model: RootCategory,
+                as: 'rootCategory', // Alias défini dans `Category`
+                attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
+              },
+            ],
+          },
+          {
+            model: ItemCharacteristic,
+            as: 'characteristics',
+            include: [
+              {
+                model: Characteristic,
+                as: 'characteristic',
+                attributes: ['id', 'name'],
+                include: [
+                  {
+                    model: CharacteristicRune,
+                    as: 'runes',
+                    include: [
+                      {
+                        model: Item,
+                        as: 'rune',
+                        attributes: ['id', 'name'], // Charger 'density'
+                        include: [
+                          {
+                            model: ItemsAveragePrice,
+                            as: 'averagePrices',
+                            attributes: ['averagePrice'],
+                            limit: 1,
+                            order: [['createdAt', 'DESC']],
+                          },
+                        ],
+                      },
+                    ],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
       }
     );
     if (!item) {
