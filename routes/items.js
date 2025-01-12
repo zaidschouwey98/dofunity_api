@@ -311,6 +311,29 @@ router.get('/items/with-exactprice', async (req, res) => {
   }
 });
 
+router.get('/runes', async (req, res) => {
+  try {
+    const items = await Item.findAll({
+      where:{
+        categoryId:78
+      },
+      include: [
+        {
+          model: ItemsAveragePrice,
+          as: 'averagePrices',
+          attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+          limit: 1,
+          order: [['createdAt', 'DESC']],
+        },
+      ],
+    });
+
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 // GET item by ID
 router.get('/:id', async (req, res) => {
   try {
