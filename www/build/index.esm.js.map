@@ -1,0 +1,1 @@
+{"version":3,"names":["Router","createRouter"],"sources":["src/index.ts"],"sourcesContent":["import { createRouter } from 'stencil-router-v2';\r\n\r\nexport { Components, JSX } from './components';\r\n\r\nexport const Router = createRouter();\r\n"],"mappings":"kEAIaA,EAASC,W","ignoreList":[]}
