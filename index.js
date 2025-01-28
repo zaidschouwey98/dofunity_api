@@ -7,25 +7,28 @@ const averageRoutes = require('./routes/itemsaverageprice');
 const itemRoutes = require('./routes/items');
 const cors = require('cors');
 const exactPriceRoutes = require('./routes/exactprices');
+const path = require('path');
+const staticPath = path.join(__dirname, 'www');
 
 const app = express();
 
-app.use(cors({
-    origin: 'http://localhost:3333',
-  }));
+app.use(express.json());
 
-// serve static assets normally
-app.use(express.static('www'))
+app.use('/api/items', itemRoutes);
+app.use('/api/categories', categoryRoutes);
+app.use('/api/rootcategories', rootCategoryRoutes);
+app.use('/api/recipes', recipeRoutes);
+app.use('/api/itemrecipes', itemRecipeRoutes);
+app.use('/api/itemsaverageprice', averageRoutes);
+app.use('/api/exactprices', exactPriceRoutes);
 
-app.use('/items', itemRoutes);
-app.use('/categories', categoryRoutes);
-app.use('/rootcategories', rootCategoryRoutes);
-app.use('/recipes', recipeRoutes);
-app.use('/itemrecipes', itemRecipeRoutes);
-app.use('/itemsaverageprice', averageRoutes);
-app.use('/exactprices', exactPriceRoutes);
+// Servir les fichiers statiques ensuite
+app.use(express.static(staticPath));
 
-
+// Rediriger toutes les autres requêtes vers index.html (SPA)
+app.get('*', (req, res) => {
+    res.sendFile(path.join(staticPath, 'index.html'));
+});
 
 const PORT = 2989;
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
