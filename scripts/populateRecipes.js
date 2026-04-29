@@ -18,7 +18,8 @@ async function fetchAndPopulate() {
                     $skip: skip,
                 },
             });
-
+            maxSkip = response.data.total;
+            console.log(`Total recipes: ${maxSkip}`);
             const data = response.data.data;
 
             // Ajouter les items récupérés à la liste complète
