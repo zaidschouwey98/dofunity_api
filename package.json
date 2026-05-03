@@ -10,6 +10,7 @@
     "db:wait": "node scripts/waitForDb.js",
     "db:migrate": "npx sequelize-cli db:migrate",
     "db:seed": "node scripts/populateRootCategories.js && node scripts/populateCategories.js && node scripts/populateCharacteristics.js && node scripts/populateRuneCharacteristics.js && node scripts/populateItems.js && node scripts/populateRecipes.js",
+    "db:import-xp": "node scripts/importItemXp.js",
     "db:setup": "npm run db:up && npm run db:wait && npm run db:migrate && npm run db:seed"
   },
   "author": "",

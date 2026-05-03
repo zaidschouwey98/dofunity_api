@@ -47,6 +47,10 @@ module.exports = (sequelize, DataTypes) => {
         type:DataTypes.INTEGER,
         allowNull:true,
       },
+      xpPerUnit: {
+        type: DataTypes.DECIMAL(24, 12),
+        allowNull: true,
+      },
     },
     {
       sequelize,

@@ -1,0 +1,2131 @@
+Nom	XP
+Badge de Malicien	0,025
+Ballon bleu	0,025
+Phéromone de Tofu	0,025
+Blé	0,03
+Bois de Frêne	0,03
+Fer	0,03
+Goujon	0,03
+Ortie	0,03
+Poudre de Perlinpainpain	0,037
+Greuvette	0,04
+Bave de Bouftou	0,041
+Feu Intérieur	0,042
+Œuf Chimérique	0,042
+Plume Chimérique	0,042
+Cendres Éternelles	0,043
+Peau de Gloot	0,043
+Pétale Diaphane	0,043
+Viande Intangible	0,043
+Laine Céleste	0,044
+Queue de Chapardam	0,044
+Relique d'Incarnam	0,045
+Volve d'Aminite	0,045
+Eau Potable	0,047
+Bois de Châtaignier	0,05
+Cuivre	0,05
+Orge	0,05
+Rune Age	0,05
+Rune Cha	0,05
+Rune Fo	0,05
+Rune Ine	0,05
+Rune Vi	0,05
+Sauge	0,05
+Truite	0,05
+Viande Hachée	0,053
+Coffret maudit du Flib	0,054
+Os de Chafer	0,055
+Citron	0,056
+Bec du Tofu	0,059
+Feuille de salace	0,059
+Intestin d'Araknosé	0,059
+Œil d'Arakmuté	0,059
+Plume de Piou Bleu	0,059
+Plume de Piou Jaune	0,059
+Plume de Piou Vert	0,059
+Plume de Piou Violet	0,059
+Poils d'Arakne Malade	0,059
+Crabe Sourimi	0,06
+Plume de Piou Rose	0,06
+Plume de Piou Rouge	0,062
+Fragment d'anomalie	0,063
+Pétale de Rose Démoniaque	0,067
+Avoine	0,07
+Bois de Noyer	0,07
+Bois de Pin	0,07
+Bronze	0,07
+Moumoule	0,07
+Poisson-Chaton	0,07
+Trèfle à 5 feuilles	0,07
+Graine de Tournesol	0,072
+Langue d'Épouvanteur	0,072
+Serviette de Plage	0,072
+Fleur de Pissenlit Diabolique	0,073
+Patte d'Arakne	0,074
+Ailes de Moskito	0,075
+Épine du Champ Champ	0,075
+Graine de Pavot	0,075
+Laine de Bouftou	0,075
+Peau de Larve Bleue	0,075
+Peau de Larve Jaune	0,075
+Peau de Larve Orange	0,075
+Peau de Larve Verte	0,075
+Pétale de Tournesol Sauvage	0,075
+Cœur de Bworkcelhaine	0,079
+Viande faisandée	0,083
+Poisson Pané	0,09
+Pétale de Rose Obscure	0,095
+Conque Marine	0,096
+Crème à bronzer	0,096
+Fluide Glacial	0,096
+Nageoire de Compétition	0,096
+Laine de Ramane Strubien	0,097
+Bois de Chêne	0,1
+Carpe d'Iem	0,1
+Corne de Boufton	0,1
+Houblon	0,1
+Kobalte	0,1
+Menthe Sauvage	0,1
+Rune Ini	0,1
+Rune Pod	0,1
+Défense du Sanglier	0,102
+Cuir de Bouftou Noir	0,104
+Aile du Tofu Maléfique	0,105
+Laine de Boufton Noir	0,109
+Bois de Bombu	0,11
+Cendres Juvéniles	0,11
+Flaque Juvénile	0,11
+Fumée Juvénile	0,11
+Poudre Juvénile	0,11
+Sardine Brillante	0,11
+Casque de Martoa	0,111
+Crocs de Rats	0,111
+Cuir de Scélérat Strubien	0,111
+Gant de Sherpoa	0,111
+Gland	0,111
+Noisette	0,111
+Œil de Pikdoa	0,111
+Oreille de Douzdoa	0,111
+Pic de Prespic	0,111
+Poils du Milimulou	0,111
+Boue du Boo	0,116
+Bout de Blop Coco	0,116
+Bout de Blop Griotte	0,116
+Bout de Blop Indigo	0,116
+Bout de Blop Reinette	0,116
+Canine Vampiresque	0,117
+Bois d'Érable	0,12
+Brochet	0,12
+Lin	0,12
+Manganèse	0,12
+Orchidée Freyesque	0,12
+Sang de Vampire	0,123
+Laine du Chef de Guerre Bouftou	0,124
+Cachet du bizut	0,125
+Levure de Boulanger	0,126
+Viande Frelatée	0,133
+Boue Juvénile	0,134
+Bois d'Oliviolet	0,14
+Kralamoure	0,14
+Os Invisible du Chafer Invisible	0,144
+Ailes de Scarafeuille Blanc	0,149
+Ailes de Scarafeuille Rouge	0,149
+Anguille	0,15
+Bois d'If	0,15
+Edelweiss	0,15
+Étain	0,15
+Riz	0,15
+Seigle	0,15
+Silicate	0,15
+Œil de Kwoan	0,155
+Bois de Bambou	0,16
+Dorade Grise	0,16
+Noix de Cajou	0,161
+Cuir de Boostache Prépubère	0,162
+Cuir de Gargrouille	0,162
+Cuir du Cochon de Lait	0,166
+Argent	0,17
+Bois de Merisier	0,17
+Graine de Pandouille	0,17
+Malt	0,17
+Perche	0,17
+Antennes de Vilinsekt	0,176
+Cuir de Ouassingue	0,176
+Dent de Garglyphe	0,176
+Dent de Tofu Mutant	0,176
+Œil de Tofu Noir	0,176
+Œuf de Tofu	0,176
+Patte de Tofukaz	0,176
+Plume de Tofu	0,176
+Estomac de Ouassingue	0,18
+Ficelle en Lin	0,18
+Côtes du Rib	0,183
+Patte d'Arakne Majeure	0,184
+Bois de Noisetier	0,19
+Raie Bleue	0,19
+Bauxite	0,2
+Bois d'Ébène	0,2
+Chanvre	0,2
+Ginseng	0,2
+Lotte	0,2
+Rune Per Pi	0,2
+Rune Pui	0,2
+Rune Ré Air	0,2
+Rune Ré Cri	0,2
+Rune Ré Eau	0,2
+Rune Ré Feu	0,2
+Rune Ré Neutre	0,2
+Rune Ré Pou	0,2
+Rune Ré Terre	0,2
+Lamelle de Champa Bleu	0,202
+Lamelle de Champa Marron	0,202
+Lamelle de Champa Rouge	0,202
+Lamelle de Champa Vert	0,202
+Bois de Tronknyde	0,206
+Bonnet de Gobaliste	0,206
+Longue-vue de Gob-Trotteur	0,206
+Os rongé de Gobichon	0,206
+Pic de Lance de Gobet	0,206
+Tambour de Gobaladée	0,206
+Graine de la Discorde	0,207
+Viande Minérale	0,208
+Bois de Kaliptus	0,21
+Requin Marteau-Faucille	0,21
+Ailes de Scarafeuille Bleu	0,214
+Ailes de Scarafeuille Vert	0,214
+Miroir de Dopeul	0,214
+Bar Rikain	0,22
+Belladone	0,22
+Bois de Charme	0,22
+Maïs	0,22
+Or	0,22
+Ailes du Scarafeuille Noir	0,221
+Papier Charbon	0,223
+Rune Pa Age	0,225
+Rune Pa Cha	0,225
+Rune Pa Fo	0,225
+Rune Pa Ine	0,225
+Rune Pa Vi	0,225
+Slip de Bwork Archer	0,229
+Corail Kouraçao	0,236
+Corail Malibout	0,236
+Corail Morito	0,236
+Corail Passaoh	0,236
+Plume Graisseuse du Tofu Ventripotent	0,239
+Bois de Bambou Sombre	0,24
+Morue	0,24
+Bourse Suspecte	0,243
+Bulbe Kouraçao	0,245
+Bulbe Malibout	0,245
+Bulbe Morito	0,245
+Bulbe Passaoh	0,245
+Sceau Royal Contrefait	0,245
+Poils de Barbe du Bwork Mage	0,248
+Branche de Tiwabbit Kiafin	0,249
+Groin de Sanglier des Plaines	0,249
+Bois d'Orme	0,25
+Dolomite	0,25
+Mandragore	0,25
+Millet	0,25
+Poils de souris	0,25
+Ronce ephedryenne	0,25
+Tanche	0,25
+Os Surprise du Chafer Fantassin	0,253
+Bec du Kwak de Flamme	0,254
+Bec du Kwak de Glace	0,254
+Bec du Kwak de Terre	0,254
+Bec du Kwak de Vent	0,254
+Capsule Explosive	0,254
+Coccyx du Corailleur	0,254
+Griffes de Kwak	0,254
+Plume du Kwak de Flamme	0,254
+Plume du Kwak de Glace	0,254
+Plume du Kwak de Terre	0,254
+Plume du Kwak de Vent	0,254
+Bois de Bambou Sacré	0,26
+Chaînes Brisées	0,26
+Espadon	0,26
+Crâne de Kardorim	0,263
+Dent de Larve Saphir	0,263
+Moustaches de Tiwabbit	0,263
+Graine de Sésame	0,266
+Gelée Bleuet	0,267
+Bois de Tremble	0,27
+Frostiz	0,27
+Obsidienne	0,27
+Perce-Neige	0,27
+Poisskaille	0,27
+Bandeau du Black Tiwabbit	0,272
+Cuir de Porkass	0,272
+Dent de Crocodaille	0,272
+Flèche du Chafer Archer	0,272
+Miséricorde du Chafer d'Élite	0,272
+Œil de Raul Mops	0,272
+Paupière d'Étoile	0,272
+Pince de Crabe	0,272
+Poil d'Abrakne	0,272
+Relique Familiale	0,272
+Slip en cuir du Chafer Lancier	0,272
+Sueur Froide de Fantôme	0,272
+Tatouage de Mauvais Garçon	0,272
+Trident Cassé	0,272
+Vieille Partition	0,272
+Ambre	0,278
+Dent de Larve Émeraude	0,282
+Gelée Citron	0,283
+Gelée à la Menthe	0,284
+Racine d'Abraknyde	0,291
+Patte de Wabbit	0,292
+Noix de Pécan	0,299
+Mâchoire du Chafer Draugr	0,3
+Gros Boulet	0,301
+Dent de Larve Rubis	0,302
+Racine de Tronkoblop	0,302
+Kokopaille	0,304
+Gelée à la Fraise	0,305
+Viande Tendre	0,31
+Corne de Buffalourd	0,312
+Croc de Trankilou	0,312
+Carapace Bleue	0,313
+Carapace Jaune	0,313
+Carapace Rouge	0,313
+Carapace Verte	0,313
+Feuille de Tikoko	0,313
+Griffe de Grolours	0,313
+Noix de Grokoko Traumatisée	0,313
+Plume de Thomondor	0,313
+Tranche de Nodkoko	0,313
+Tronc de Kokoko	0,313
+Patte de Black Wabbit	0,319
+Fleur de Blopignon	0,322
+Patte de Twakeuf	0,326
+Épaulière de Bwork	0,328
+Dent de Larve Dorée	0,33
+Œil Bionique	0,337
+Os de Wabbit Squelette	0,341
+Haïku du dragon : Passion	0,342
+Haïku du dragon : Résolution	0,342
+Emballage Suspect	0,348
+Peau Égrotante	0,354
+Dent de Waddict	0,36
+Sourcil de Moskito	0,364
+Bandeau de Black Wabbit Squelette	0,371
+Peau de Ramane d'Égoutant	0,371
+Fourrure de Timongouste	0,373
+Tendon de Waccro	0,383
+Gratrooll Industriel	0,384
+Peau de Mob l'Éponge	0,391
+Aile de Bourdard	0,395
+Chaîne de Robot Fléau	0,395
+Coque Endommagée	0,395
+Oreille de Guerrier Mental	0,395
+Peau de serpentin	0,395
+Poils de Barbe du Grand Pa Wabbit	0,395
+Queue de Rat d'Hyoactif	0,395
+Bave de Rose Démoniaque	0,398
+Charnière Cassée	0,404
+Dent de Larve Champêtre	0,404
+Estomac de Wo Wabbit	0,404
+Griffe de Robionicle	0,404
+Souris verte	0,404
+Pierre du Craqueleur	0,41
+Fleur de Gloutoblop	0,426
+Coton Ancestral	0,428
+Herbe Folle	0,428
+Fraise	0,429
+Engrais	0,434
+Patte d'Arakne Magique	0,443
+Canine de Gobelin	0,444
+Feuille de Tournesol Sauvage	0,446
+Fil de Soie	0,446
+Poil de Rat d'Égoutant	0,446
+Poupée Vaudou Ark	0,446
+Poupée Vaudou Eth	0,446
+Poupée Vaudou Jav	0,446
+Poupée Vaudou Sarbak	0,446
+Poupée Vaudou Tam	0,446
+Viande Ladre	0,446
+Bois Vermoulu	0,448
+Sporme du Champ Champ	0,448
+Ferrite	0,45
+Planche Agglomérée	0,45
+Rune Pa Ini	0,45
+Rune Pa Pod	0,45
+Rune Prospe	0,45
+Rune Sa	0,45
+Boîte de Vétauran	0,453
+Eau calme	0,455
+Casque du Chafer Primitif	0,463
+Œil de Craquelope	0,471
+Pic de dragodinde	0,48
+Sang de Bouftou	0,487
+Aile de volkorne ebène	0,488
+Aile de volkorne indigo	0,488
+Aile de volkorne orchidée	0,488
+Aile de volkorne pourpre	0,488
+Moustache de muldo doré	0,488
+Moustache de muldo ebène	0,488
+Moustache de muldo indigo	0,488
+Moustache de muldo orchidée	0,488
+Moustache de muldo pourpre	0,488
+Flamme Spectrale	0,492
+Chicot du Flib	0,494
+Silex	0,499
+Écaille poisseuse	0,507
+Foulard du Sparo	0,508
+Clef de la Crypte de Kardorim	0,525
+Graines de Citwouille Maudites	0,525
+Maillot de corps de Barbroussa	0,534
+Peau de Koalak Immature	0,534
+Sang du Kido	0,535
+Noeul Mort	0,542
+Fragment de Pierre Pointue	0,543
+Fragment de Pierre Polie	0,549
+Papatte de Croc Gland	0,549
+Pierre de Diamant	0,55
+Babines de Macien	0,565
+Champignon	0,565
+Graine de Scorbute	0,565
+Laine du Boufcoul	0,565
+Main de Boo	0,565
+Moustache de Kolérat	0,565
+Oreille de Foufayteur	0,565
+Plume de Crowneille	0,565
+Queue de dragodinde sauvage	0,565
+Feuille de Rose Obscure	0,574
+Poil de Vétauran	0,578
+Crinière de Scélérat Strubien	0,582
+Liquide vampiresque	0,584
+Étoffe du Sanglier	0,609
+Ambre d'Abraknyde Sombre	0,619
+Cuir de Bouftou Royal	0,619
+Écaille de Chef Crocodaille	0,626
+Coquille de Dragoeuf Ardoise	0,628
+Coquille de Dragoeuf Argile	0,628
+Coquille de Dragoeuf Charbon	0,628
+Ongle de Kanigrou	0,628
+Peau de Dragoeuf Albâtre	0,628
+Jeton du Chazino des Ecaflipuces	0,63
+Viande Avariée	0,641
+Charbon	0,656
+Pic de dragodinde dorée	0,659
+Étoffe d'Écurouille	0,665
+Œil de Ramane Strubien	0,665
+Patte d'Arakne des Égouts	0,665
+Poils de Darit	0,665
+Rondelles de Milirat Strubien	0,665
+Scalp de Milimulou	0,667
+Rune Pata Age	0,675
+Rune Pata Cha	0,675
+Rune Pata Fo	0,675
+Rune Pata Ine	0,675
+Rune Pata Vi	0,675
+Rune Ra Age	0,675
+Rune Ra Cha	0,675
+Rune Ra Fo	0,675
+Rune Ra Ine	0,675
+Rune Ra Vi	0,675
+Rune Rata Age	0,675
+Rune Rata Cha	0,675
+Rune Rata Fo	0,675
+Rune Rata Ine	0,675
+Rune Rata Vi	0,675
+Rune Ta Age	0,675
+Rune Ta Cha	0,675
+Rune Ta Fo	0,675
+Rune Ta Ine	0,675
+Rune Ta Vi	0,675
+Tissu Invisible	0,682
+Cœur de Boue du Boo	0,692
+Pétale Magique du Tournesol Affamé	0,692
+Étoffe de Dok Alako	0,711
+Pierre Médicinale	0,711
+Coquille de Dragoeuf Calcaire	0,717
+Plume de Tofu Maléfique	0,758
+Bougie du Mineur Sombre	0,763
+Boue Novice	0,785
+Flaque Novice	0,785
+Fumée Novice	0,785
+Poudre Novice	0,785
+Casque Cassé du Chafer	0,788
+Rune Fui	0,8
+Rune Tac	0,8
+Pierre d'Émeraude	0,802
+Pierre de Granit	0,809
+Boomerang du Warko Marron	0,823
+Viande Sanguinolente	0,834
+Bâton de Blanc Pa Wabbit	0,841
+Casque de Wobot	0,841
+Estomac de Black Wo Wabbit	0,841
+Lunettes de Tiwobot	0,841
+Œil de Léolhyène	0,841
+Poil de Wobot Kiafin	0,841
+Racine d'Abraknyde Sombre	0,844
+Boule de Boulépique	0,862
+Écailles d'Ouroboulos	0,862
+Queue de Fennex	0,862
+Queue de Scordion Bleu	0,862
+Racine d'Abraknyde Vénérable	0,862
+Rune Pa Per Pi	0,9
+Rune Pa Pui	0,9
+Rune Pa Ré Air	0,9
+Rune Pa Ré Cri	0,9
+Rune Pa Ré Eau	0,9
+Rune Pa Ré Feu	0,9
+Rune Pa Ré Neutre	0,9
+Rune Pa Ré Pou	0,9
+Rune Pa Ré Terre	0,9
+Rune Pata Ré Pou	0,9
+Os de Trooll	0,915
+Masque Brisé d'Araknotron	0,926
+Pince de Crabe Hijacob	0,926
+Ailes du Scarabosse Doré	0,946
+Boostoplasme	0,946
+Plume de Gélikan	0,951
+Cendres Novices	0,957
+Os de Pékeualak	0,969
+Peau de Piralak	0,969
+Poils de Koalak Coco	0,969
+Poils de Koalak Forestier	0,969
+Poils de Koalak Griotte	0,969
+Poils de Koalak Indigo	0,969
+Poils de Koalak Reinette	0,969
+Dent de Kwoan	0,974
+Langue de Gargrouille	0,974
+Queue de Boostache Prépubère	0,974
+Poil de Chachachovage	0,976
+Colonne Vertébrale	0,979
+Chauve-souris	0,998
+Pépite	1
+Étoffe de Rat Bougri	1,003
+Bandelettes	1,012
+Bombe de Graboule	1,012
+Botte trouée de Mégabwork	1,012
+Bourgeon de Pirolienne	1,012
+Corne du Boufcoul	1,012
+Couteau de Roukouto	1,012
+Oreille de Médibwork	1,012
+Peau de Krambwork	1,012
+Roue de Tivelo	1,012
+Tissu Pourpre	1,012
+Corne de volkorne	1,025
+Patte de Kankreblath	1,029
+Plume de Batofu	1,029
+Champignon Luidegît	1,037
+Chélicères d'Arapex	1,039
+Dent de Gargantûl	1,039
+Écorce d'Abrakne Sombre	1,039
+Fil de Néfileuse	1,039
+Laine de Dardalaine	1,039
+Œil de Saltik	1,039
+Haïku du dragon : Création	1,044
+Haïku du dragon : Destruction	1,044
+Cire de Gligli Améliorée	1,05
+Peau de Kraméléhon	1,054
+Cocon de Ver à Soie	1,064
+Crâne de Chafer	1,064
+Duvet de Tofoune	1,064
+Estomac de Tofu Ventripotent	1,064
+Estomac de Tofukaz	1,064
+Œuf Pourri	1,064
+Rondelle de Bois	1,064
+Slip en Cuir Moulant du Garglyphe	1,064
+Tissu Sombre	1,064
+Cuir de Porsalu	1,067
+Mâchoire de Rib	1,073
+Huile de Tournesol Sauvage	1,075
+Feuille de Fourbasse	1,094
+Fleur de Gloutovore	1,094
+Manuel du Directeur Grunob	1,094
+Plume de Domoizelle	1,094
+Plume de Dostrogo	1,094
+Trukikol Mort	1,094
+Bandeau de Nakunbra	1,103
+Boulet de Canondorf	1,103
+Caleçon Mignon du Pirate	1,103
+Canif Rouillé	1,103
+Rhum de Qualité	1,103
+Viande Rassie	1,103
+Cawotte	1,106
+Queue du Mulou	1,121
+Eau Ferrugineuse	1,151
+Viscères de Scarafeuille	1,198
+Huile de Sésame	1,199
+Aluminite	1,2
+Corps de Quintaine	1,2
+Planche Contreplaquée	1,2
+Huile de Frostiz	1,215
+Sourcils de Tronknyde	1,226
+Patte de Bouledogre	1,236
+Rune de chasse	1,25
+Rune Do Air	1,25
+Rune Do Cri	1,25
+Rune Do Eau	1,25
+Rune Do Feu	1,25
+Rune Do Neutre	1,25
+Rune Do Pi	1,25
+Rune Do Pou	1,25
+Rune Do Ren	1,25
+Rune Do Terre	1,25
+Peau de Drakoalak	1,262
+Plume de Gobvious	1,262
+Fémur du Chafer Rōnin	1,288
+Os de Mama Koalak	1,297
+Jeton du Chazino des Matougarous	1,305
+Dent de Molette	1,323
+Bec de Vilain Petit Tofu	1,331
+Jaune d'Œuf de Krokille	1,339
+Serrure du Coffre des Forgerons	1,339
+Poil de Capsaaloocke	1,34
+Pustule de Rat Sio	1,34
+Short de Capoei Rat	1,34
+Canine de Mergranlou	1,349
+Coquille de Dragoss Protéiforme	1,349
+Écaille de Dragoss Ardoise	1,349
+Écaille de Dragoss Argile	1,349
+Écaille de Dragoss Calcaire	1,349
+Écaille de Dragoss Charbon	1,349
+Griffe de Muloubard	1,349
+Œil de Cocholou	1,349
+Oreille de Rhinoféroce	1,349
+Poils de Mulounoké	1,349
+Rune Pata Ini	1,35
+Rune Pata Pod	1,35
+Rune Ra Ini	1,35
+Rune Ra Pod	1,35
+Rune Rata Ini	1,35
+Rune Rata Pod	1,35
+Rune Ta Ini	1,35
+Rune Ta Pod	1,35
+Scalp de Bwork Archer	1,382
+Peau de Bworkette	1,389
+Pince de Crustorail	1,398
+Pierre de souillure bleue impure	1,401
+Sac à Patates Clair	1,401
+Sac à Patates Sombre	1,401
+Clef des Champs	1,406
+Viande Exsudative	1,424
+Bave de Ouassingue	1,443
+Pierre de souillure jaune impure	1,448
+Pierre de souillure verte impure	1,452
+Paille Vampiresque	1,454
+Pétale Kouraçao	1,454
+Pétale Malibout	1,454
+Pétale Morito	1,454
+Pétale Passaoh	1,454
+Pièce du Puzzle de la Griffe	1,454
+Pièce du Trésor du Badoul	1,454
+Antenne de Trésantène	1,458
+Corde de Boursoin	1,458
+Corne de Berserkoffre	1,458
+Langue de Mimikado	1,458
+Moustache précieuse	1,458
+Lait de Cochon de Lait	1,461
+Carapace de Scaratos	1,467
+Plumeau de Tofuzmo	1,467
+Plume de Buveur	1,47
+Plume de Corbac Apprivoisé	1,47
+Collier de Chak Rat	1,477
+Lance de Chika Rat	1,477
+Lance-Pierre de Scélée Rate	1,477
+Ouvrage magique d'Aloevée Rate	1,477
+Livre du Bwork Mage	1,48
+Bandelette du Mominotor	1,483
+Cendres de Tofutoflamme	1,483
+Cuir de Déminoboule	1,483
+Poil de Renarbo	1,497
+Arakne Majeure Morte	1,5
+Langue de Tiwabbit Kiafin	1,5
+Moustache du Mufafah	1,5
+Queue de Sanglier des Plaines	1,5
+Plume de Tofubine	1,508
+Corail usé	1,515
+Ver d'Air	1,515
+Ver de Feu	1,515
+Ver de Terre	1,515
+Ver d'Eau	1,515
+Dent de Bourbassingue	1,529
+Plume de fesse du Kido	1,529
+Patte de Corbac	1,531
+Dent de Wabbit	1,56
+La cambriole pour les Nuls	1,563
+Oreilles du Tiwabbit	1,563
+Peau de Larve Saphir	1,563
+Peau de Shin Larve	1,563
+Plume du Kwakwa	1,563
+Sacrum magistral	1,563
+Patte de Tofu Dodu	1,585
+Bourgeon de Fourbasse	1,591
+Glouto Rhum	1,591
+Fragment de cerveau poli	1,604
+Carapace vide de Crabe	1,627
+Côtes de Porkass	1,627
+Dentier du Chafer d'Élite	1,627
+Fémur du Chafer Archer	1,627
+Langue d'Étoile	1,627
+Linceul	1,627
+Makroute Déchiqueté	1,627
+Muqueuse de Moumoule	1,627
+Œil d'Abrakne	1,627
+Ours Déchiqueté	1,627
+Peau de Raul Mops	1,627
+Poils de Black Tiwabbit	1,627
+Slip en cuir de Porkass	1,627
+Touffe de Cheveux Blancs	1,627
+Nacre brute	1,63
+Aile du Bitouf des Plaines	1,634
+Écaille de Crocodaille	1,635
+Corne de Dragacé	1,637
+Corne de Dragmatique	1,637
+Peau de Dragnarok	1,637
+Peau de Draguaindrop	1,637
+Peau de Dragueuse	1,637
+Potion de Souvenir	1,65
+Duvet du Kilibriss	1,664
+Peau de Mandrine	1,664
+Peau de Minoskito	1,664
+Blop mort	1,685
+Pierre de Rubis	1,688
+Peau de Larve Émeraude	1,693
+Peau de Cochon de Farle	1,708
+Morceau de clef Coco	1,725
+Morceau de clef Griotte	1,725
+Morceau de clef Indigo	1,725
+Morceau de clef Reinette	1,725
+Pierre de Cristal	1,743
+Os de Crocodaille	1,744
+Kamiam	1,75
+Étoffe du Wabbit	1,761
+Poil de Gamino	1,764
+Fragment d'Os	1,766
+Poils de Guerrier Koalak	1,778
+Tibia de Koalak Fossoyeur	1,778
+Vieille Ventouse de Kralamoure	1,778
+Clef du Château Ensablé	1,78
+Flûte de Mastodonte	1,8
+Rune Ré Per Air	1,8
+Rune Ré Per Eau	1,8
+Rune Ré Per Feu	1,8
+Rune Ré Per Neutre	1,8
+Rune Ré Per Terre	1,8
+Slip en cuir de Cochon de Lait	1,804
+Oreille de Bouftonmouth	1,812
+Peau de Larve Rubis	1,831
+Houpette de Koalak Sanguin	1,843
+Viande Séchée	1,846
+Épine de Bulbuisson	1,853
+Épine de Grath	1,853
+Langue de Grenufar	1,853
+Œil de Morcac	1,853
+Palpe de Pikbul	1,853
+Patte de Pupuce	1,853
+Peau de Gériatique	1,853
+Pistil de Floristile	1,853
+Pollen de Bulbiflore	1,853
+Tige de Bambouto	1,853
+Lait de Tortue	1,866
+Noix de Kokoko	1,866
+Peau de Chevaucheur Koalak	1,901
+Métaria bleue	1,903
+Métaria jaune	1,903
+Métaria rouge	1,903
+Métaria verte	1,903
+Crâne magique de Rate Atinée	1,919
+Oreille de Rat Plapla	1,919
+Tuyau Rouillé de Rate Iboisée	1,919
+Vieux Bouquin de Rat Li	1,919
+Pom de Pin	1,922
+Feuille de Blop Royal	1,952
+Foulard de Koalak Farouche	1,969
+Laine de Boufmouth	1,976
+Bourgeon d'Abraknyde Sombre Irascible	1,977
+Peau de Larve Dorée	1,978
+Rune de Signature	1,98
+Plume du Serpiplume	1,984
+Masque Cassé d'Araknotron Irascible	2
+Relique du Corailleur Magistral	2
+Pierre de Topaze	2,004
+Jeton du Chazino du Grand Jeu	2,025
+Rune Pa Prospe	2,025
+Rune Pa Sa	2,025
+Queue de Black Wabbit	2,033
+Couche usagée de Warko Violet	2,038
+Cubitus de Momie Koalak	2,038
+Crâne de Wabbit Squelette	2,054
+Ambre d'Abraknyde	2,081
+Corne de Boufmouth de guerre	2,104
+Patte d'Abrakne Irascible	2,121
+Peau de Don Duss Ang	2,154
+Laine de Boufmouth légendaire	2,174
+Crâne d'Aventurier	2,177
+Peau de Maître Koalak	2,177
+Osselet de Black Wabbit Squelette	2,212
+Crinière de Troollaraj	2,214
+Carniflore	2,228
+Éclat du Mawabouaino	2,228
+Gelée Bleuet Royale	2,228
+Gelée Citron Royale	2,228
+Gelée Fraise Royale	2,228
+Gelée Menthe Royale	2,228
+Poil du Wa Wabbit	2,228
+Première partie de la clef du labyrinthe du Dragon Cochon	2,235
+Teinture Magique Sombre	2,235
+Pompon Brunâtre	2,236
+Doigt de Branche Invocatrice	2,246
+Feuille de Branche Soignante	2,246
+Enfumoir Zoth	2,249
+Ébonite	2,25
+Huile de Riz	2,25
+Planche à Griller	2,25
+Gâtrool	2,251
+Gratrooll	2,251
+Poil de Troolléolé	2,251
+Clef de la Cour du Bouftou Royal	2,254
+Boomerang Abîmé de Diamantine	2,304
+Dédicace de Skeunk pour Émeraude	2,304
+Épingle à Cheveux de Saphira	2,304
+Touffe de Poils de Rubise	2,304
+Fiole à élément	2,32
+Peau de Don Dorgan	2,333
+Casque cassé de Bwork	2,344
+Duvet de Bourdard	2,367
+Pierre de Saphir	2,376
+Viande Saignante	2,378
+Courroie en cuir	2,38
+Poils de Wo Wabbit	2,38
+Venin de Serpentin	2,38
+Fléau de Robot Fléau	2,392
+Oreille du Grand Pa Wabbit	2,392
+Dents de Wabbit Vampire	2,403
+Feuille de Cawotman	2,403
+Œil de Wabbit Céphale	2,403
+Oreilles de Wabbit Fluo	2,403
+Pixel de Segmantid	2,403
+Sang de Wabbit Garou	2,403
+Duvet de Truchon	2,404
+Grelot	2,405
+Minerai Étrange	2,418
+Peau de Larve Champêtre	2,43
+Bidule inutile	2,444
+Œil de Truchtine	2,444
+Corne de Gamino	2,446
+Dent en Or de Craqueleur	2,448
+Rune Ré Pa	2,45
+Rune Ré Pme	2,45
+Rune Ret Pa	2,45
+Rune Ret Pme	2,45
+Huile de Pichon	2,475
+Plume de Truchideur	2,483
+Jouet de Gamine Zoth	2,487
+Croupion de Truchmuche	2,611
+Pierre du Craqueleur Légendaire	2,621
+Jeton du Bworker	2,625
+Peau de Rat	2,646
+Teinture Magique Bleutée	2,648
+Patte de Gruche	2,652
+Pierre Précieuse Zoth	2,652
+Pierre de Crystaloboule	2,662
+Boules de Kanniboul	2,683
+Rune Pata Pui	2,7
+Rune Pata Ré Cri	2,7
+Rune Ra Per Pi	2,7
+Rune Ra Pui	2,7
+Rune Ra Ré Air	2,7
+Rune Ra Ré Cri	2,7
+Rune Ra Ré Eau	2,7
+Rune Ra Ré Feu	2,7
+Rune Ra Ré Neutre	2,7
+Rune Ra Ré Pou	2,7
+Rune Ra Ré Terre	2,7
+Rune Rata Pui	2,7
+Rune Ta Pui	2,7
+Rune Ta Ré Cri	2,7
+Rune Ta Ré Per Air	2,7
+Rune Ta Ré Per Eau	2,7
+Rune Ta Ré Per Feu	2,7
+Rune Ta Ré Per Neutre	2,7
+Rune Ta Ré Per Terre	2,7
+Rune Ta Ré Pou	2,7
+Queue d'Écumouth	2,719
+Fleur de Kaliptus	2,765
+Plume du Timansot	2,801
+Langue de Craquelope	2,817
+Substrat de Buisson	2,85
+Aile de dragodinde	2,868
+Pixel de Brikablak	2,884
+Pixel de Farfacette	2,884
+Pixel de Gromorso	2,884
+Pixel d'Éklatleth	2,884
+Bave de muldo	2,887
+Clef de la Maison Fantôme	2,887
+Griffe de volkorne	2,887
+Cœur de Craqueleur	2,896
+Boulier Zoth	2,924
+Osier Sombre	2,938
+Teinture Magique Orange	2,948
+Touffe rousse du Flib	2,967
+Boue Mature	2,986
+Cendres Matures	2,986
+Flaque Mature	2,986
+Fumée Mature	2,986
+Peau de Mansobèse	2,987
+Akaslip d'Akakwa	3
+Baguette de Tétonuki	3
+Bandelette de Tromblion	3
+Bec de Kwakao	3
+Blé d'Or	3
+Concombre	3
+Cuir du Sanglacier	3
+Enrobage de Chocoskargo	3
+Estomac de Mansocolat	3
+Fleur de Cactiflore	3
+Foulard de Milimaître	3
+Goujon Kiye	3
+Katana de Kwamouraï	3
+Lunettes de Parashukouï	3
+Maraca de Lévito	3
+Masque de Shinibaru	3
+Moustaches de Cactoblongo	3
+Oreille de Kakoalak	3
+Ortie Roïde	3
+Os de Sramouraï	3
+Parchemin de Cactana	3
+Pelage chocolaté	3
+Poils de Smilomouth	3
+Poing rocheux d'Ishigro Pake	3
+Poterie cassée de Lolojiki	3
+Relique de Gourlo le Terrible	3
+Salopette Kwapa	3
+Sarbacane en Bambou	3
+Sève de Frêne	3
+Slip d'Elsoummo	3
+String de Pampactus	3
+Viande Persillée	3,005
+Humérus du Sparo	3,069
+Duvet de Nelween	3,14
+Étoffe de Draegnerys	3,14
+Morceau de caleçon de Gourlo	3,14
+Baballe	3,174
+Barbe inexistante du Barbroussa	3,174
+Diamant	3,176
+Coffre de Pièges à Chasseur	3,191
+Duvet de Mamansot	3,201
+Calumet Zoth	3,222
+Oreille percée du Fricochère	3,222
+Méga Pierre du Craqueleur	3,263
+Bractée de Chiendent	3,271
+Viscères de Scorbute	3,281
+Sacoche de Kartouche	3,283
+Poil de barbe du Shamansot	3,319
+Sépale de Nerbe	3,319
+Oreille de Kaniglou	3,346
+Collier Cassé de Macien	3,354
+Fibre criminelle	3,354
+Fragment d'Épée Reptilienne	3,354
+Kolérat Mort	3,354
+Œil de Crowneille	3,354
+Clef de la Cache de Kankreblath	3,366
+Clef du Donjon des Tofus	3,366
+Carpelle de Brouture	3,368
+Dent de dragodinde	3,372
+Aile de dragodinde rousse sauvage	3,391
+Étoffe de Foufayteur	3,391
+Calice de Fécorce	3,418
+Clef du Donjon des Scarafeuilles	3,433
+Queue du Fu Mansot	3,447
+Huile de Noix	3,449
+Rune Pa Fui	3,6
+Rune Pa Tac	3,6
+Rune Pata Fui	3,6
+Rune Pata Tac	3,6
+Rune Rata Fui	3,6
+Rune Rata Tac	3,6
+Rune Ta Fui	3,6
+Rune Ta Tac	3,6
+Étamine de Floribonde	3,601
+Peau de Pataugerme	3,616
+Clef du Clos des Blops	3,628
+Amygdales du Bitouf Sombre	3,653
+Œil de Rat du Gang	3,655
+Poudre Mature	3,665
+Graine de l'Abrakleur sombre	3,706
+Bracelet de Ino-Naru	3,722
+Étoffe de Kurookin	3,722
+Lame brisée de Lichangoro	3,722
+Peau de Crachefoux	3,722
+Peau de Rouquette	3,722
+Poils de Boumbardier	3,722
+Poils de Founamboul	3,722
+Poils de Pétartifoux	3,722
+Ruban d'Uchiwang	3,722
+Tête de lance de Fangshu	3,722
+Clef de l'Akadémie des Gobs	3,724
+Griffe de Dragoeuf Albâtre	3,729
+Poudre explosive	3,732
+Œil de Kanigrou	3,74
+Magnésite	3,75
+Planche de Surf	3,75
+Crâne de Chef Crocodaille	3,779
+Viande Macérée	3,794
+Clef du Donjon des Squelettes	3,89
+Substrat de Bocage	3,9
+Laine de Bouftou Royal	3,977
+Andésite	4
+Greuvette Horreur	4
+Aile de dragodinde dorée	4,03
+Queue de Rat du Gang	4,045
+Morceau de clef du Matin Pewlant	4,1
+Morceau de clef du Midi Wayonnant	4,1
+Morceau de clef du Soiw Woulant	4,1
+Pierre de Dopeul	4,113
+Œuf de Dragoeuf Ardoise	4,127
+Œuf de Dragoeuf Argile	4,127
+Œuf de Dragoeuf Charbon	4,127
+Coquille de Fantimonier	4,187
+Écaille de Harpirate	4,187
+Mât de Fantômat	4,187
+Pince du Fancrôme	4,187
+Queue de Fantomalamère	4,187
+Barbe du Wa Wobot	4,207
+Carapace du Mantiscore	4,207
+Clef du Donjon des Bworks	4,312
+Boomerang du Dok Alako	4,318
+Racine d'Abraknyde Ancestral	4,343
+Cuir de Gliglibido	4,363
+Défense de Gliglicérin	4,363
+Étoffe de Gliglidoudur	4,363
+Huile de Koode	4,38
+Poil de Gliglitch	4,545
+Pierre d'Agathe	4,58
+Pierre de Sélénite	4,6
+Clef du Donjon des Forgerons	4,635
+Bidoche Minérale	4,654
+Clef de la Grotte Hesque	4,706
+Étoffe de Vigie Pirate	4,786
+Bolas de Maltrio	4,792
+Corne de Malbois	4,792
+Corne de Père Phorreur	4,792
+Griffe de Phorrêveur	4,792
+Œil de Phozami	4,792
+Peau de Métaphorreur	4,792
+Pic de Malépik	4,792
+Porte-bonheur de Malalfa	4,792
+Pousse de Malzerb	4,792
+Queue de Mère Veilleuse	4,792
+Clef du Nid du Kwakwa	4,815
+Fragment du Gorgouille	4,861
+Viande de Brousse	4,912
+Rembourrage de Meupette	4,935
+Orge en Sucre	5
+Rune Cri	5
+Rune So	5
+Sauge Divine au Rhum	5
+Sève de Châtaignier	5
+Truite Ancestrale	5
+Boulon Wabbit	5,074
+Ivoire	5,091
+Bakélélite	5,1
+Écorce de Liroye Merline	5,112
+Œuf de Dragoeuf Calcaire	5,14
+Sable Fin	5,14
+Cloaque du Poolay	5,227
+Écorce d'Abraknyde Vénérable	5,227
+Résidu de Solfataré	5,227
+Teinture Magique Verdâtre	5,247
+Breuvage Musculaire	5,36
+Croupion du Bitouf aérien	5,365
+Substrat de Futaie	5,4
+Groin de Dragon Cochon	5,469
+Peau de Moon	5,469
+Scalp du Meulou	5,469
+Tresse du Koulosse	5,469
+Chaîne de Panthègros	5,504
+Griffe de Félygiène	5,504
+Émeraude	5,511
+Barbe du Chouque	5,513
+Faux Visage de Choudini	5,513
+Soie Baveuse	5,513
+Arakne Écrabouillée	5,54
+Œil de Crabe Hijacob	5,54
+Jus de poisson	5,55
+Crinière d'Orfélin	5,574
+Oreille de Kaniblou	5,574
+Rune Pa Do Air	5,625
+Rune Pa Do Cri	5,625
+Rune Pa Do Eau	5,625
+Rune Pa Do Feu	5,625
+Rune Pa Do Neutre	5,625
+Rune Pa Do Pi	5,625
+Rune Pa Do Pou	5,625
+Rune Pa Do Ren	5,625
+Rune Pa Do Terre	5,625
+Rune Pata Do Air	5,625
+Rune Pata Do Cri	5,625
+Rune Pata Do Eau	5,625
+Rune Pata Do Feu	5,625
+Rune Pata Do Neutre	5,625
+Rune Pata Do Terre	5,625
+Rune Rata Do Air	5,625
+Rune Rata Do Eau	5,625
+Rune Rata Do Feu	5,625
+Rune Rata Do Neutre	5,625
+Rune Rata Do Terre	5,625
+Rune Ta Do Air	5,625
+Rune Ta Do Cri	5,625
+Rune Ta Do Eau	5,625
+Rune Ta Do Feu	5,625
+Rune Ta Do Neutre	5,625
+Rune Ta Do Terre	5,625
+Cheveux d'Alhyène	5,645
+Tignasse de Kanihilan	5,645
+Bec de Gélikan	5,679
+Moustache de Boostache	5,694
+Viscères du Scarabosse Doré	5,694
+Peinture Bleue	5,709
+Peinture Jaune	5,709
+Peinture noire	5,709
+Peinture Orange	5,709
+Peinture Rouge	5,709
+Peinture Verte	5,709
+Peinture Violette	5,709
+Copie de la clef du repaire des bandits	5,742
+Deuxième clef du Donjon de Sphincter	5,75
+Première clef du Donjon de Sphincter	5,75
+Clef du Refuge sylvestre	5,763
+Bave du Kaskargo	5,766
+Rubis	5,766
+Sternum de Chachachovage	5,826
+Patte de la Gardienne des Égouts	5,839
+Potion de Vieillesse	5,85
+Souche de l'Abrakleur clair	5,913
+Collier de Chakichan	5,932
+Croissant de Tsukinochi	5,932
+Dent de Chakaroze	5,932
+Épaulière de Kabushido	5,932
+Fleur d'Onabu-Geisha	5,932
+Oreille de Chargus	5,932
+Os de Jiangshi-Nobi	5,932
+Plastron de Tambouraï	5,932
+Poil de Chacrebleu	5,932
+Queue de Chasquatch	5,932
+Patte de Rat Bougri	5,98
+Crabe Sourimi Exotique	6
+Planche à Repasser	6
+Relique du Rasboul Majeur	6
+Rune Ra Sa	6,075
+Viande fraîche	6,085
+Avoine Magique	6,13
+Cuir Violet de Mégabwork	6,13
+Osier Enchanté	6,13
+Peau de Roukouto	6,13
+Peau de Tivelo	6,13
+Scalp de Bizarbwork	6,13
+Tissu de Graboule	6,13
+Tranche Magique de Krambwork	6,13
+Glande d'Arak-haï	6,169
+Farine Humée	6,184
+Toile d'Abrakne Sombre	6,208
+Sueur de dragodinde	6,212
+Écaille de Grozilla	6,25
+Teinture Magique Ténébreuse	6,353
+Pierre d'Atomystique	6,389
+Pierre de Fumrirolle	6,389
+Clef de la Fonderie des Waddicts	6,522
+Deuxième partie de la clef du labyrinthe du Dragon Cochon	6,53
+Kole	6,546
+Kouartz	6,6
+Nœud de Marin	6,677
+Bourgeon explosif de Damadrya	6,702
+Viscères de Tanuki	6,719
+Poils de barbe de dragodinde	6,74
+Pierre de Mofette	6,765
+Incisive de Kami Givrefoux	6,868
+Laine de Maho Givrefoux	6,868
+Laine de Yokaï Givrefoux	6,868
+Malléole de Yomi Givrefoux	6,868
+Oreille de Soryo Givrefoux	6,868
+Teinture Magique de Rougeur	6,898
+Avoine Aurifère	7
+Pierre d'Aigue-Marine	7
+Poisson-Tigre	7
+Sève de Noyer	7
+Trèfle Agare	7
+Potion des Ancêtres	7,05
+Cœur de Crapeur	7,188
+Duvet du Maître Corbac	7,256
+Broderie de Malléfisk	7,292
+Chaussette trouée de Dramak	7,292
+Dent du Kharnozor	7,292
+Écaille de Grasmera	7,292
+Rouflaquettes d'Halouine	7,292
+Crinière de Rat Blanc	7,326
+Métaria Triame jaune	7,411
+Métaria Triame rouge	7,411
+Oreille de Bouledogre	7,426
+Étoffe du Mulou	7,497
+Rune Pata Cri	7,5
+Rune Ta Cri	7,5
+Métaria Triame bleue	7,507
+Métaria Triame verte	7,507
+Clef du Village Kanniboul	7,586
+Jus de Ouassingue	7,622
+Coiffe déchiquetée de Drakoalak	7,627
+Élastique de Gobvious	7,627
+Substrat de Fascine	7,65
+Plume du Rasboul Majeur	7,721
+Dent de Cycloporth	7,737
+Kaokurimono	7,737
+Kapokaza	7,737
+Lanterne usée	7,737
+Masque brisé	7,737
+Œil de Madura	7,737
+Patte de Masticroc	7,737
+Peau de Trémorse	7,737
+Pic de Pikténia	7,737
+Touffe de cheveux de Soissanth	7,737
+Clef de l'Arche d'Otomaï	7,761
+Saphir	7,83
+Échasse de Molette	7,833
+Dents de Mulou	7,867
+Houpette de Vilain Petit Tofu	8,019
+Nacre	8,037
+Coquille de Dragoss Ardoise	8,043
+Coquille de Dragoss Argile	8,043
+Coquille de Dragoss Charbon	8,043
+Corne de Dragoss Calcaire	8,043
+Corne de Dragoss Protéiforme	8,043
+Corne de Rhinoféroce	8,043
+Mojo de Mergranlou	8,043
+Scalp de Mulounoké	8,043
+Testicules de Cocholou	8,043
+Testicules Magiques de Muloubard	8,043
+Cuir de Capsaaloocke	8,056
+Clef du Terrier du Wa Wabbit	8,117
+Bidoche Faisandée	8,123
+Langue de Morsquale	8,167
+Feuille de Blop Multicolore Royal	8,187
+Peau de Crocabulia	8,187
+Poils du Minotoror	8,187
+Paquet Cadeau du Minotoboule de Nowel	8,189
+Viande Maigre	8,19
+Fleur de Korriandre	8,225
+Poil de Bworkette	8,315
+Poison cinglant	8,362
+Cristal	8,543
+Écorce d'Abrazif	8,647
+Lamelle de Dramanite	8,647
+Lamelle de Mérulette	8,647
+Volve de Fistulor	8,647
+Volve de Fongeur	8,647
+Écorce de Champaknyde	8,747
+Planche de Toilette	8,775
+Corne de Scaratos	8,809
+Croupion de Tofuzmo	8,809
+Boule polie	8,819
+Braise de Tofutoflamme	8,856
+Corne de Déminoboule	8,856
+Corne de Mominotor	8,856
+Poil de Rat Bontarien	8,962
+Poisson Igloo	9
+Cœur de Buveur	9,011
+Plume Pointue de Renarbo	9,011
+Œuf de Tofubine	9,03
+Crinière fleurie	9,052
+Furoncle de la Mama Bwork	9,052
+Kriptonite	9,15
+Bandeau troué d'Air	9,154
+Bandeau troué de Feu	9,154
+Bandeau troué de Terre	9,154
+Bandeau troué d'Eau	9,154
+Corbac Mort	9,217
+Bave de Champ à Gnons	9,258
+Lamelle de Champbis	9,258
+Langue de Champodonte	9,258
+Œil de Champmane	9,258
+Trompe de la Tromperelle	9,258
+Glande du Pounicheur	9,265
+Barbe de Seith	9,284
+Dent de Trezz	9,284
+Pagne de Trantroa	9,284
+Peau de Vindeux	9,284
+Bec du Kido	9,289
+Faux menton du Bourbassingue	9,289
+Tuf de Mofette	9,289
+Bec du Kwakwa	9,328
+Corail Magistral	9,328
+Dent de Shin Larve	9,328
+Clef des Pitons Rocheux des Craqueleurs	9,42
+Étoffe de Ouassingue	9,436
+Aile Atrophiée de Tofu Dodu	9,515
+Cœur de pierre poli	9,531
+Œil de Krokille	9,57
+Boulon de Cybwork	9,571
+Cœur de Brandon	9,674
+Aile de Puceronde	9,676
+Dard de Morfrelon	9,676
+Patte de Scoliopode	9,676
+Viande Gâtée	9,676
+Aile de Draguaindrop	9,777
+Croc de Dragoeuf Protecteur	9,777
+Coco du Bitouf des Plaines	9,779
+Clef du Laboratoire de Brumen Tinctorias	9,883
+Métaria Mage bleue	9,958
+Métaria Mage rouge	9,958
+Métaria Mage verte	9,958
+Bois d'Aquajou	10
+Carpette des sables	10
+Écume de mer	10
+Houblon Brillant	10
+Menthe Religieuse	10
+Patelle	10
+Pichon d'encre	10
+Quisnoa	10
+Relique du Tynril	10
+Salikrone	10
+Sève de Chêne	10
+Tulipe en papier	10
+Bâton du Kilibriss	10,032
+Artefact Pandawushu Bois	10,059
+Nectar de l'Orient	10,061
+Peau de Minos	10,315
+Clef du Potager d'Halouine	10,348
+Clef de l'antre du Blop Multicolore	10,35
+Potion de Glandage	10,35
+Bandelette du Guerrier Koalak	10,554
+Tourbe séchée de Tourbassingue	10,554
+Pince de Lucrane	10,613
+Venin d'Éperfide	10,613
+Crinière de Rat Noir	10,678
+Cuir de Bouftonmouth	10,943
+Clef de l'Épreuve de Draegnerys	10,961
+Griffe de Blérauve	10,967
+Molaire de Blérice	10,967
+Omoplate de Blérom	10,967
+Oreille d'Apériglours	10,967
+Oreille de Croleur	10,967
+Oreille de Gobosteur	10,967
+Queue de Wolvero	10,967
+Sardine Sombre	11
+Sève de Bombu	11
+Rune Pa Ré Pa	11,025
+Rune Pa Ré Pme	11,025
+Rune Pa Ret Pa	11,025
+Rune Pa Ret Pme	11,025
+Rune Pata Ré Pa	11,025
+Rune Pata Ré Pme	11,025
+Rune Pata Ret Pa	11,025
+Rune Pata Ret Pme	11,025
+Rune Rata Ré Pa	11,025
+Rune Rata Ré Pme	11,025
+Rune Rata Ret Pa	11,025
+Rune Rata Ret Pme	11,025
+Rune Ta Ré Pa	11,025
+Rune Ta Ré Pme	11,025
+Rune Ta Ret Pa	11,025
+Rune Ta Ret Pme	11,025
+Poil de Rat Brâkmarien	11,049
+Boomerang du Koalak Sanguin	11,099
+Kobalite	11,1
+Racine du Chêne Mou	11,552
+Fleur de Blop Coco Royal	11,648
+Fleur de Blop Griotte Royal	11,648
+Fleur de Blop Indigo Royal	11,648
+Fleur de Blop Reinette Royal	11,648
+Fémur de Koalak Farouche	11,667
+Oreille de Fleuro	11,75
+Œil de Sapeur	11,879
+Clavicule de Boufmouth	11,901
+Ambre d'Abraknyde Sombre Irascible	11,918
+Boue Vénérable	11,971
+Cendres Vénérables	11,971
+Flaque Vénérable	11,971
+Fumée Vénérable	11,971
+Poudre Vénérable	11,971
+Arakne Irascible Écrasée	11,983
+Brochet Tupe-Halett	12
+Lin Tempête	12
+Orchidée de Génie	12
+Sève d'Érable	12
+Pierre de Serpiplume	12,003
+Métaria Mage jaune	12,011
+Laine du Royalmouth	12,016
+Pixel de Fraktale	12,016
+Poil de Skeunk	12,016
+Peau d'Ouilleur	12,139
+Antenne de Gloursaya	12,2
+Armure de Blindur	12,2
+Bave de Brokouillon	12,2
+Bave de Marthos	12,2
+Cuir de Glouragan	12,2
+Élastique de barbe de Sanglirok	12,2
+Flèche de Crâmbo	12,2
+Fronde de Boufronde	12,2
+Incisive de Glourmand	12,2
+Mèche de Serpyn	12,2
+Os de Nemroz	12,2
+Poils de Boulglours	12,2
+Queue de Chevrotine	12,2
+Queue de Meliglours	12,2
+Sang de Viandargh	12,2
+Planche à Pâtisserie	12,225
+Poils de Barbe du Warko Violet	12,259
+Péroné du Marôdeur	12,27
+Œil de Boufmouth de guerre	12,64
+Langue de Kraméléhon	12,684
+Viande Noire	12,774
+Mandibule d'Abrakne Irascible	12,781
+Boomerang du Maître Koalak	12,878
+Étoffe du Fauchalak	12,878
+Relique du Kimbo	13
+Clef du Domaine Ancestral	13,044
+Bracelet de Force de Trooll	13,096
+Épaulière de Troolligark	13,096
+Laine du Trooll Furieux	13,096
+Slip de Troollaraj	13,096
+Bidoche Frelatée	13,208
+Étoffe Zoth	13,235
+Queue du Boufmouth légendaire	13,256
+Cagoule du Kanniboul Ebil	13,416
+Étoffe du Wa Wabbit	13,416
+Œil de Branche Invocatrice	13,535
+Œil de Branche Soignante	13,535
+Clef du Donjon de Nowel	13,541
+Pierre du Courtilieur	13,642
+Clef du Cimetière des mastodontes	13,87
+Corde d'escalade	13,903
+Œuf de Gobus	13,931
+Kralamoure Unique	14
+Sève d'Oliviolet	14
+Masque de la Vengeance	14,077
+Masque de la Violence	14,077
+Masque de la Vivacité	14,077
+Masque du Vice	14,077
+Masque du Vide	14,077
+Cawotte Transgénique	14,327
+Huile de Palme	14,373
+Rutile	14,4
+Bec de Truchon	14,424
+Pyrute	14,475
+Planche de Gravure	14,625
+Koinkoin de bain de Nagate	14,646
+Glandes de Truchtine	14,779
+Journal Intime d'Émeraude	14,85
+Pense-bête de Rubise	14,85
+Place de Concert de Diamantine	14,85
+Shampooing au Kaliptus de Saphira	14,85
+Rotule du Disciple Zoth	14,9
+Anguille Souroche	15
+Cœur du Capitaine Ekarlatte	15
+Cœur du Croqueleur	15
+Edelweiss Marguerite	15
+Gland de Fouduglen	15
+Orbe régénérant mineur	15
+Paire de boules de Haute Truche	15
+Picot d'El Piko	15
+Riz Cola	15
+Seigle Résistant	15
+Sève d'If	15
+Testicules du Tanukouï San	15
+Tête de Marteau en Jade	15
+Morpion de Truchideur	15,142
+Mouchoir de la Gamine Zoth	15,266
+Langue de Truchmuche	15,513
+Bananagrume	15,621
+Tibia du Guerrier Zoth	15,651
+Méga Pierre du Craqueleur Légendaire	15,661
+Aile de Gruche	15,893
+Daurade Royale	16
+Sève de Bambou	16
+Clef de la Caverne du Koulosse	16,039
+Écusson du Sergent Zoth	16,056
+Étoffe du Roissingue	16,215
+Substrat de Bosquet	16,275
+Gland de l'Écumouth	16,477
+Braguette du Maître Zoth	16,482
+Viande Goûtue	16,825
+Aile de Kérigoule	16,875
+Aile de Nocturlabe	16,875
+Aile de Sinistrofu	16,875
+Antenne de Bacterrib	16,875
+Aquarakne de Crânonier	16,875
+Armure de Tanklume	16,875
+Astragale de Mécanofoux	16,875
+Baguette Rythmique	16,875
+Bandeau de Voapah	16,875
+Barbe du Cyclophandre	16,875
+Bave de Mol Usk	16,875
+Bave de Nessil	16,875
+Bec de Mansordide	16,875
+Bois de pagaie usée	16,875
+Boule en or de Piloztère	16,875
+Boulet lesté	16,875
+Bout d'Armure de Macrab	16,875
+Bractée de Drosérâle	16,875
+Canine de Cronnibal	16,875
+Canine de Kanimate	16,875
+Canine de Krakal	16,875
+Canine tranchante	16,875
+Capuche d'Armécréante	16,875
+Capuche de Skentu	16,875
+Carapace de Krabouilleur	16,875
+Casque de Statulipe	16,875
+Ceinture de la Dame	16,875
+Cendres de Chause	16,875
+Chair de Zombruth	16,875
+Chaudron de Températurge	16,875
+Coquille de Virustine	16,875
+Corne de Typhomet	16,875
+Côtes de Désosseur	16,875
+Crâne magique de Magouille	16,875
+Cuir de Cuirboule	16,875
+Cuir de Grodruche	16,875
+Cuir de Peunch	16,875
+Cuir d'Empaillé	16,875
+Cuir d'Eskoglyphe	16,875
+Dent de Bandleth	16,875
+Dent de Klémort	16,875
+Dent de Lévitrof	16,875
+Dent de Tilamproie	16,875
+Dent de Vatenbière	16,875
+Diadème de Chocoligarque	16,875
+Écaille de Gambaf	16,875
+Encre de Poulpée	16,875
+Épaule de Maléphisto	16,875
+Épaulière de Bourôliste	16,875
+Épaulière de Ferrailleur	16,875
+Épine d'Armuguet	16,875
+Épine de Diondin	16,875
+Étoffe sanglante	16,875
+Flûte de Klûtiste	16,875
+Fragment d'armure	16,875
+Fragment de Chakanoubis	16,875
+Fragment d'Ectorche	16,875
+Fronde de Boufbos	16,875
+Gilet du Valet	16,875
+Grenade de Moribombe	16,875
+Grenat de Momistik	16,875
+Griffe de Strigide	16,875
+Incisive de Stalak	16,875
+Incus de Verglasseur	16,875
+Jambière de Kasrok	16,875
+Langue de Diabélial	16,875
+Langue de Kashkaille	16,875
+Langue de Krèvladal	16,875
+Langue de Pistilangue	16,875
+Liane de Soldalia	16,875
+Linothorax	16,875
+Mâchoire de Brutasmodan	16,875
+Manche de Fouet	16,875
+Maxillaire de Brikoglours	16,875
+Mèche de Pralicienne	16,875
+Morceau de clef de Paspartou	16,875
+Mousse de Caméliache	16,875
+Moustache de Rilur	16,875
+Nez de Pipisteuse	16,875
+Œil de Cycloïde	16,875
+Œil de Dawaj	16,875
+Œil de Feutôme	16,875
+Œil de Gouligane	16,875
+Œil de Halbardent	16,875
+Œil de Harrogant	16,875
+Œil de Shokkoth	16,875
+Œil de Verminocule	16,875
+Ongle de Goulafre	16,875
+Oreille de Griffotep	16,875
+Pagne d'Alashasss	16,875
+Patte de Li-Fo	16,875
+Patte de Nheur'Gueule	16,875
+Patte de Tabacille	16,875
+Patte de Termystique	16,875
+Paupière Dorée de Rykaon	16,875
+Peau de Torréfactueur	16,875
+Peau pourrie de Dolid	16,875
+Pétale de Gangredogue	16,875
+Pic de Pikoleur	16,875
+Piège désamorcé de Mâchassin	16,875
+Pile Steamer	16,875
+Pince de Crabe Yoloniste	16,875
+Pince de Crâme	16,875
+Pique du Soldat	16,875
+Plume de Brabuzar	16,875
+Plume de Dodox	16,875
+Plume de Granduk	16,875
+Plume du Cavalier	16,875
+Poils de barbe de Barbélier	16,875
+Poils de Goultime	16,875
+Poing de Coquelicogne	16,875
+Pointe de Lance de Tournoyé	16,875
+Poupée de Caïguille	16,875
+Protection de Funespadon	16,875
+Queue de Mantaze	16,875
+Restes d'Esprigné	16,875
+Rune Pata Do Pou	16,875
+Rune Ra Do Pou	16,875
+Rune Ta Do Pou	16,875
+Sang coagulé	16,875
+Sang de Harpo	16,875
+Sang de Karkanik	16,875
+Sang de Ventrublion	16,875
+Sceau du Roi Joueur	16,875
+Sourcil de Barbétoal	16,875
+Stapes de Frimar	16,875
+Tentacule de Démoloch	16,875
+Tentacule de Grofond	16,875
+Tentacule de N'Yalg	16,875
+Tentacule de Tentaclaque	16,875
+Toque de Cabosseur	16,875
+Vertèbre de Trépavois	16,875
+Volve de Mérulor	16,875
+Clef du Chapiteau des Magik Riktus	16,955
+Bec du Timansot	16,973
+Chaton-Perche	17
+Malt Husse	17
+Pandouille de Trois	17
+Sève de Merisier	17
+Ardonite	17,025
+Brochette de Laikteur	17,201
+Clef de l'Antre de la Reine Nyée	17,275
+Plume de Tofu Royal	17,326
+Lanterne de Tourthon	17,609
+Défense du Sanglacier	17,828
+Dent de Smilomouth	17,828
+Chouchou de Doublure	17,868
+Corne de Kamasterisk	17,868
+Mèche de bombe de Terristocrate	17,868
+Artefact Pandawushu Roc	17,975
+Jus de Cacterre	17,975
+Pépite croquée	17,975
+Poils magiques de Tanuki	17,975
+Artefact Pandawushu Eau	17,983
+Eau de Kwapa	17,983
+Clef du Bateau du Chouque	18,038
+Trident de Tryde	18,08
+Aile de Mansobèse	18,215
+Weischelcreme Torte	18,253
+Langue de Hacharné	18,409
+Écharpe de Hanshi	18,611
+Piques à cheveux de Shihan	18,611
+Pistil du Tynril	18,611
+Plume du Mansot Royal	18,611
+Cheveux de Draegnerys	18,646
+Étoffe de Gourlo le Terrible	18,646
+Fiole de fumée de Nelween	18,646
+Queue Magique de Founoroshi	18,68
+Clef de l'Arbre de Moon	18,748
+Clef de la Fabrique de Malléfisk	18,85
+Raie de Farle	19
+Sève de Noisetier	19
+Œil torve de Fricochère	19,079
+Huile de Mamansot	19,15
+Clef Secrète du Tofulailler Royal	19,23
+Écorce de Chiendent	19,365
+Planche à Pain	19,5
+Arête géante du Shamansot	19,654
+Substrat de Fourré	19,725
+Écorce de Nerbe	19,827
+Tonneau en Bombu	19,95
+Chanvre Euphorique	20
+Ginsengoku	20
+Glotte	20
+Rune Do	20
+Sève d'Ébène	20
+Clef du labyrinthe du Dragon Cochon	20,068
+Plaque d'acier	20,084
+Aile d'Eninferno	20,25
+Corne de Méjaire	20,25
+Diadème de Belilith	20,25
+Griffe de Buboxor	20,25
+Groin de Porkzebuth	20,25
+Œil de Harpille	20,25
+Scalp de Bwariok	20,25
+Serre d'Ikargn	20,25
+Spalière de Krâradia	20,25
+Écorce de Brouture	20,3
+Étoffe de Kaniglou	20,327
+Clef du Château du Wa Wabbit	20,688
+Oreille du Fu Mansot	20,745
+Écorce de Fécorce	20,784
+Requin Marché-Libre	21
+Sève de Kaliptus	21
+Clef de la Tanière du Meulou	21,125
+Clef du Théâtre de Dramak	21,127
+Tête de mort	21,22
+Écorce de Floribonde	21,278
+Agathe	21,31
+Coco du Bitouf Sombre	21,784
+Clef du Repaire du Kharnozor	21,81
+Bar Iton	22
+Belladonzelle	22
+Maïssého	22
+Sève de Charme	22
+Talon d'achille de l'Abrakleur sombre	22,302
+Rune Pa So	22,5
+Rune Pata So	22,5
+Rune Rata So	22,5
+Rune Ta So	22,5
+Artefact Pandawushu Feu	22,635
+Artefact Pandawushu Vent	22,635
+Étoffe de Firefoux	22,635
+Pelage aérodynamique	22,635
+Pilule du Gang	23,811
+Défense du Phossile	23,958
+Épine Dorsale de Grozilla	23,958
+Fémur de Sphincter Cell	23,958
+Mèche Rebelle d'Hell Mina	23,958
+Poil de Ben le Ripate	23,958
+Morue Barbue	24
+Sève de Bambou Sombre	24
+Clef du Miausolée du Pounicheur	24,065
+Planche à Dessin	24,6
+Kamatrix	24,846
+Bouée de Fantomalamère	24,876
+Coquille de Harpirate	24,876
+Corde du Fancrôme	24,876
+Huile de Fantimonier	24,876
+Galet cramoisi	25
+Galet Saisonnier	25
+Mandragorgonzola	25
+Millet Zime	25
+Sève d'Orme	25
+Tanche Hantée	25
+Clef du Garde-manger du Rat Blanc	25,087
+Cœur du Mantiscore	25,219
+Clef de la Bibliothèque du Maître Corbac	25,272
+Coffre-forge	25,5
+Estomac de Gliglidoudur	25,726
+Sabot de Gliglicérin	25,971
+Sève de Bambou Sacré	26
+Bourgeon d'Abraknyde Ancestral	26,156
+Clef du Goulet du Rasboul	26,257
+Bidoche Intangible	26,316
+Biscuit de chance	26,439
+Corne de Gliglibido	26,476
+Étoile des Neiges	27
+Frostiz soufflé	27
+Lanière en cuir de Gliglitch	27
+Poisskaille Givré	27
+Sève de Tremble	27
+Clef de l'antre du Dragon Cochon	27,403
+Substrat de Forêt	27,525
+Planche de Salut	27,6
+Sablier miniature	27,686
+Clef du Labyrinthe du Minotoror	27,766
+Clef de l'Antre de Crocabulia	28,313
+Pétale de Malter	28,465
+Clef du Repaire de Sphincter Cell	28,771
+Extrémité du Grattoir	28,794
+Œil de Vigie Pirate	28,879
+Bidoche Exsudative	29,006
+Poignée du Gorgouille	29,134
+Étoffe de Meupette	29,559
+Clef de la Bambusaie de Damadrya	29,603
+Ethmoïde du Minotot	29,659
+Moustache de Ush	29,659
+Moustache du Shogun Tofugawa	29,659
+Poils de Kanigroula	29,659
+Scorie d'Obsidiantre	29,659
+Sphénoïde du Kimbo	29,659
+Teinture Orange Sanguine	29,66
+Apostrophe de Fugokam	30
+Apostrophe d'Imafugo	30
+Carapace circonflexe de Rokoram	30
+Carapace circonflexe d'Imorok	30
+Cédille de Tsunam	30
+Cédille d'Imetsu	30
+Culotte de Frakacia	30
+Guillemets de Mabram	30
+Guillemets d'Imiyama	30
+Poing-virgule de Shinlam	30,267
+Bidoche Tendre	30,296
+Clef de la Sousouricière du Rat Noir	30,394
+Éclat Obscur	30,5
+Topaze	30,768
+Tresse du Poolay	30,914
+Clef du Repaire de Skeunk	30,945
+Pâte à Tra Khben	31,095
+Cervelle de Bouftou des Cavernes	31,342
+Jus d'Écumouth pressé	31,535
+Ulna de Solfataré	31,593
+Potion d'altération	32,1
+Philtre de Longévité	32,16
+Substrat de Forêt primaire	32,4
+Coco du Bitouf aérien	32,423
+Boule de Panthègros	32,548
+Canine de Félygiène	32,548
+Étoffe Magique de Moon	32,731
+Pierre du Koulosse	32,731
+Testicules Magiques du Meulou	32,731
+Clef de la serre du Royalmouth	32,863
+Dent de Fantômat	33,059
+Clef du Temple Maudit	33,265
+Boucle d'Orfélin	33,322
+Étoffe de Kaniblou	33,322
+Bwak Squelettique	33,385
+Étoffe de Choudini	33,385
+Globule de Nyée	33,385
+Implants Rustiques	33,637
+Poing-virgule d'Imushin	33,817
+Coquille du Kaskargo	34,011
+Frimousse d'Alhyène	34,115
+Peau de Kanihilan	34,115
+Artefact de Fumrirolle	34,848
+Téphra d'Atomystique	34,848
+Nœud de l'Abrakleur clair	34,882
+Concassé de brume	35,591
+Étoffe de Samouraï fantôme	35,852
+Clef du Mégalithe de Fraktale	36,136
+Œuf de Crapeur	36,392
+Potion minérale	36,394
+Coquille de Krokille	36,648
+Farine de contrebande	36,75
+Fausse dent de Grozilla	36,765
+Clakoss	36,856
+Braises bleutées	38,684
+Corne de XLII	38,684
+Laine de Tengu Givrefoux	38,684
+Œil du Père Ver	38,684
+Cornée de Kami Givrefoux	40,278
+Crâne de Yokaï Givrefoux	40,278
+Cuir de Maho Givrefoux	40,278
+Patte de Soryo Givrefoux	40,278
+Queue de Yomi Givrefoux	40,278
+Clef de la Volière de la Haute Truche	40,938
+Clef du caveau du Prince Djamal	41,41
+Substrat de Forêt vierge	42
+Clef de l'Atelier du Tanukouï San	42,614
+Grizite	42,964
+Chicots d'Halouine	43,46
+Œil du Kharnozor	43,46
+Poche de charbon de Grasmera	43,46
+Slip troué de Dramak	43,46
+Poil de Dragon Cochon	43,75
+Bidoche Ladre	44,76
+Orbe régénérant	45
+Rune Invo	45
+Substrat de Sylve	45
+Yokayu	45,37
+Ventouse du Kralamoure géant	46,023
+Clef de la Caverne d'El Piko	47,114
+Clef de la Croquanterie	47,114
+Clef de la Vallée de la Dame des eaux	47,114
+Clef du Ring du Capitaine Ekarlatte	47,198
+Carapace de Ver des Sables	47,559
+Épine d'Ougah	48,382
+Ongle du Bworker	48,382
+Patte de Korriandre	48,382
+Sang du Toxoliath	48,382
+Corne brisée de Crocabulia	48,884
+Fleur de Blop Multicolore Royal	48,884
+Plume Vibrante du Tofu Royal	48,884
+Clef Mansot	49,065
+Œil de Dramanite	51,761
+Oreille de Fistulor	51,761
+Pédoncule de Fongeur	51,761
+Pédoncule de Mérulette	51,761
+Racine d'Abrazif	51,761
+Salace de poissons empoisonnée	52,168
+Kristalite	52,171
+String en Cuir de la Mama Bwork	54,183
+Clef de la Clairière du Chêne Mou	54,366
+Caleçon Blanc	54,798
+Caleçon Bleu	54,798
+Caleçon Brun	54,798
+Caleçon Rouge	54,798
+Queue emplumée du Rasboul Majeur	55,851
+Fibre de Chanvre	56,207
+Caleçon de Cybwork	57,29
+Clef de la Fabrique de foux d'artifice	57,849
+Clef du Dojo du vent	57,849
+Bidoche Séchée	58,834
+Clef de la salle du Minotot	59,35
+Clef de la Galerie du Phossile	59,63
+Cloche de Barbéryl Clochecuivre	61
+Corne d'Ombre	61
+Cuir de Fuji Givrefoux	61
+Griffe de Kolosso	61
+Poils du Comte Razof	61
+Poudre glaciale	61
+Queue de Glourséleste	61
+Bidoche Avariée	62,212
+Cervelle de Solar	62,953
+Clef du Laboratoire du Tynril	63,813
+Larme de Givrefoux	65
+Jus de poisson abominable	66,345
+Étoffe de Croleur	67,418
+Manubrium de Wolvero	67,418
+Oreille de Blérice	67,418
+Poil de Blérauve	67,418
+Queue de Blérom	67,418
+Vomer d'Apériglours	67,418
+Ambre du Chêne Mou	69,598
+Œil de Fleuro	69,703
+Peau de Skeunk	71,088
+Queue du Royalmouth	71,088
+Corne Brûlée du Minotoror	71,635
+Crochet rouillé	72,5
+Clef du Plateau de Ush	73,162
+Sang de Calciné	73,885
+Clef du Tertre du long sommeil	74,665
+Fragment de pépite de Sakaï	74,838
+Aile de Gloursaya	75
+Bonnet de Guerre	75
+Bouteille de Bouchonnois	75
+Calcanéus de Meliglours	75
+Étoffe de Glourmand	75
+Iris de Boulglours	75
+Laine de Glouragan	75
+Plume de Misère	75
+Poils de barbe de Marteau-Aigri	75
+Trame Dimensionnelle	75
+Verrou de Servitude	75
+Manche du Grattoir	75,995
+Clef de l'hypogée de l'Obsidiantre	76,645
+Clef du Grolandais violent	80,872
+Corne de Corruption	81,893
+Symbole des Obscuranti	82,931
+Bidoche Sanguinolente	84,146
+Aile de Larve de Koutoulou	84,375
+Aile de Vortex	84,375
+Barbe de Merkator	84,375
+Broderie de la Prêtresse de Kao	84,375
+Broderie de la Reine des Voleurs	84,375
+Broderie de Nileza	84,375
+Cheveux de Tal Kasha	84,375
+Dé du Chalœil	84,375
+Dentier de Dantinéa	84,375
+Écaille de Torkélonia	84,375
+Épaulière de Dazak Martegel	84,375
+Joyau de la couronne du roi Nidas	84,375
+Laine de Sylargh	84,375
+Masque cauchemardesque de l'Éternel Conflit	84,375
+Moustache de Klime	84,375
+Noyau de Protozorreur	84,375
+Pic d'Anerice	84,375
+Plume d'Ilyzaelle	84,375
+Poil d'aisselle de Missiz Frizz	84,375
+Poil de Meno	84,375
+Pointe osseuse de Grasmera	84,375
+Queue de Bethel Akarna	84,375
+Rouge à lèvres de Belladone	84,375
+Scapula du Comte Harebourg	84,375
+Sceptre brisé de Kabahal	84,375
+Potion de Sésanabolisant	85,846
+Clef de la Grotte de Kanigroula	86,699
+Clef de la Canopée du Kimbo	87,707
+Étoile d'Or d'El Piko	89,876
+Œuf de Haute Truche	89,876
+Clef de la Tombe du Shogun Tofugawa	91,416
+Tissu de Rapiéçage	92,532
+Dissolvant Phosphorescent	97,065
+Culotte à l'envers du Roissingue	97,29
+Manche de Knout	97,5
+Scie à glace	98,438
+Élixir de Brumen	100
+Étoffe Mystérieuse	100
+Bidoche Rassie	100,28
+Bec de Dodox	101,25
+Bec de Granduk	101,25
+Bec de Strigide	101,25
+Broderie d'Eskoglyphe	101,25
+Brûlâme encapsulé	101,25
+Carapace de Termystique	101,25
+Cervelle de Peunch	101,25
+Cervelle de Verglasseur	101,25
+Chaussette du Cyclophandre	101,25
+Chope de Bière	101,25
+Cire de Cire Momore	101,25
+Cœur d'Empaillé	101,25
+Coquille de Submergé	101,25
+Crinière de Krakal	101,25
+Culotte de Harrogant	101,25
+Dent de Cuirboule	101,25
+Éclat Kao brisé	101,25
+Ethmoïde de Stalak	101,25
+Étoffe de Grodruche	101,25
+Fleur des protecteurs	101,25
+Goulobule rouge	101,25
+Griffe de Kanimate	101,25
+Huile de Pikoleur	101,25
+Malleus de Karkanik	101,25
+Molaire de Nessil	101,25
+Molaire de Ventrublion	101,25
+Moustache de Frimar	101,25
+Œil de Crocodaille albinos	101,25
+Œil de Harpo	101,25
+Oreille de Mécanofoux	101,25
+Parasite Aquatique	101,25
+Pédoncule de Mérulor	101,25
+Pic de Ravageur	101,25
+Pic du Nocturlabe	101,25
+Pierre Angulaire	101,25
+Pince de Krabouilleur	101,25
+Plume de Cycloïde	101,25
+Queue de Brikoglours	101,25
+Queue de Sinistrofu	101,25
+Scarabée Chrysonéfritin	101,25
+Sel de Baleine	101,25
+Sépale de Drosérâle	101,25
+Sternum de Mansordide	101,25
+Collier d'esclave	103,404
+Lame tranchante	103,404
+Terre Stérile	103,404
+Germes corrompus	104,008
+Grattoir à dos inachevé	105,662
+Aigue-Marine	105,701
+Seau de Pinces à Linge	106,425
+Clef de la Tanière Givrefoux	109,69
+Rossignol	111,382
+Peau de Trithon	111,724
+Ambre du Tynril	113,176
+Œuf du Mansot Royal	113,176
+Clef de l'Horologium de XLII	113,781
+Masque de protection	116,541
+Appendice Démoniaque	119,118
+Bidoche Fraîche	119,725
+Clef de la Demeure des Esprits	120,112
+Clef du Boyau du Père Ver	121,401
+Clef de la Cave du Toxoliath	123,986
+Galet Lunaire	125
+Clef du caveau du Roi Léorictus	125,801
+Lanières de Knout	130,048
+Rune Po	130,05
+Pointes de Knout	132,417
+Clef de l'Antre du Korriandre	135,044
+Artefact Pandawushu	136,936
+Clef de la Grotte du Bworker	141,132
+Bézoard Ardent de Grozilla	142,327
+Étoffe de Sphincter Cell	142,327
+Scapula de Ben le Ripate	142,327
+Poignée de Katana	142,936
+Diacritique de la Reine Amirukam	144,643
+Diacritique du Roi Imagami	144,643
+Orbe régénérant majeur	150
+Croc de Krokille	155,625
+Jus de poisson asphyxiant	157,424
+Clef de la Caverne de Nowel	159,939
+Ambre de muldo	160
+Gravure de Courant d'Air	160,716
+Gravure de Crachin	160,716
+Gravure de Secousse	160,716
+Gravure d'Étincelle	160,716
+Potion de Courant d'Air	161,836
+Potion de Crachin	161,836
+Potion de Secousse	161,836
+Potion d'Étincelle	161,836
+Clef du Temple du Grand Ougah	167,863
+Chaussette du Kimbo	179,258
+Queue de Kanigroula	179,258
+Sabot du Minotot	179,258
+Vertèbre d'Obsidiantre	179,258
+Clef de la mine de Sakaï	183,117
+Clef du Bastion des Marteaux-Aigris	187,753
+Clef du Camp du Comte Razof	187,753
+Clef du Défi du Chalœil	204,12
+Pétale d'encre	205,006
+Pétale de Papier	205,741
+Clef du Palais du roi Nidas	206,693
+Clef des cavernes du Kolosso	207,078
+Clef du Trône de la Cour Sombre	209,671
+Clef de la Pyramide d'Ombre	210,276
+Planche hatoufer	219
+Clef de l'Antichambre des Gloursons	219,528
+Cuir de Tengu Givrefoux	226,852
+Clef du Temple de Koutoulou	226,875
+Clef du Vaisseau du Capitaine Meno	226,875
+Clef du Palais de Dantinéa	232,692
+Bidoche Saignante	237,261
+Clef de l'Œil de Vortex	244,215
+Galet rutilant	250
+Clef de la Brasserie du roi Dazak	254,19
+Clef de la Forgefroide de Missiz Frizz	254,19
+Clef de la Sentence de la Balance	254,19
+Clef de la Tempête de l'Eliocalypse	254,19
+Clef de l'Aquadôme de Merkator	254,19
+Clef des Fers de la Tyrannie	254,19
+Clef des Salons privés de Klime	254,19
+Clef du Donjon du Comte Harebourg	254,19
+Clef du Laboratoire de Nileza	254,19
+Clef du Transporteur de Sylargh	254,19
+Clef du Trône de Sang	254,19
+Clef du Ventre de la Baleine	254,19
+Clef de l'Arbre de Mort	254,595
+Gants de protection	257,475
+Encre du Kralamoure géant	278,159
+Fleur de Cendrepierre	280,748
+Clef de la Maison du Papa Nowel	286,511
+Fragment d'Ougalurette	289,613
+Œil de Korriandre	289,613
+Peau du Bworker	289,613
+Clef de la Bataille de l'Aurore Pourpre	297,975
+Clef de la Chambre de Tal Kasha	297,975
+Clef de la Chambre des maléfices	297,975
+Clef de la Tour de Bethel	297,975
+Clef du Belvédère d'Ilyzaelle	297,975
+Clef du Manoir des Katrepat	297,975
+Clef du Sanctuaire de Torkélonia	297,975
+Clef du Temple du dieu Kao	297,975
+Substrat Astral	300
+Bidoche Persillée	300,518
+Clef de la Tour de Solar	302,578
+Espadon Quichotte	305
+Lame de Katana	335,437
+Boucle intemporelle	337,5
+Boucle temporelle	337,5
+Cœur de Cire Momore	337,5
+Clef du Rituel de Kabahal	338,475
+Condyle de Fuji Givrefoux	375
+Eclat temporel	375
+Étoffe de Kolosso	375
+Hamatum de Glourséleste	375
+Bidoche Macérée	377,99
+Boulon neuf	400
+Fermeture éclair	400
+Mycoses gelées	400
+Œil de verre	400
+Racine cristalline	400
+Rune Ga Pme	405
+Clef du Souvenir d'Imagiro	405,801
+Clef de la Mémoire d'Orukam	416,451
+Sceau Sylvestre	430
+Orbe régénérant magistral	450
+Bidoche de Brousse	475,207
+Poche de magma de Grasmera	496,324
+Croquette enrichie	500
+Fragment de Rubis Fertile	500
+Œuf d'Ali Grothor	500
+Rune Ga Pa	500
+Potion de Tsunami	502,11
+Potion d'Incendie	502,11
+Potion d'Ouragan	502,11
+Gravure de Tsunami	505,79
+Gravure d'Incendie	505,79
+Gravure d'Ouragan	505,79
+Bandelette du Comte Harebourg	506,25
+Braguette de Nileza	506,25
+Cœur de Merkator	506,25
+Culotte de Missiz Frizz	506,25
+Incisive de Sylargh	506,25
+Scalp de Klime	506,25
+Potion de Séisme	512,374
+Gravure de Séisme	516,054
+Poils de Zatoïshwan	550
+Cuir Onique	600
+Scalp d'Anatak	620
+Galet Solaire	625
+Filtre à frousse	640
+Hélice en laiton	640
+Marque des grands fonds	640
+Plombs de plongée	640
+Socle en coquillage	640
+Steamopompe	640
+Jus de poisson pestilentiel	670,925
+Alliage Ivre	750
+Cœur Gelé	750
+Sporme de Dremoan	750
+Épaulière Massive du K.O.	800
+Bidoche Maigre	800,363
+Jus de poisson méphitique	894,695
+Légende de Brumaire	900
+Bidoche Gâtée	967,647
+Bidoche Noire	1253,425
+Bidoche Goûtue	1569,389

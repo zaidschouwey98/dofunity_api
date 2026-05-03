@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 const { ItemCharacteristic,Characteristic, CharacteristicRune , Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
 const { sequelize } = require('../models'); // Importez Sequelize depuis models/index.js
-const { where } = require('sequelize');
+const { where, Op } = require('sequelize');
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -329,6 +329,75 @@ router.get('/runes', async (req, res) => {
     });
 
     res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+/** Ressources avec XP/unité et dernier prix moyen ; tri XP/prix décroissant (plus rentables en premier). */
+router.get('/resources/profitability', async (req, res) => {
+  try {
+    const parsed = parseInt(req.query.limit, 10);
+    const limit = Math.min(parsed > 0 ? parsed : 800, 5000);
+
+    const items = await Item.findAll({
+      where: { xpPerUnit: { [Op.not]: null } },
+      attributes: ['id', 'name', 'lvl', 'categoryId', 'xpPerUnit'],
+      include: [
+        {
+          model: Category,
+          as: 'category',
+          attributes: ['id', 'name'],
+          required: false,
+          include: [
+            {
+              model: RootCategory,
+              as: 'rootCategory',
+              attributes: ['id', 'name'],
+              required: false,
+            },
+          ],
+        },
+        {
+          model: ItemsAveragePrice,
+          as: 'averagePrices',
+          attributes: ['averagePrice'],
+          limit: 1,
+          order: [['createdAt', 'DESC']],
+        },
+      ],
+    });
+
+    const rows = items.map((item) => {
+      const xpPerUnitRaw = item.get('xpPerUnit');
+      const xpPerUnit =
+        xpPerUnitRaw != null ? parseFloat(String(xpPerUnitRaw)) : null;
+
+      const avg = item.averagePrices?.[0]?.averagePrice;
+      const unitPrice =
+        avg != null && avg !== ''
+          ? parseFloat(String(avg))
+          : null;
+
+      const xpPerPrice =
+        unitPrice != null && unitPrice > 0 && xpPerUnit != null && !Number.isNaN(xpPerUnit)
+          ? xpPerUnit / unitPrice
+          : null;
+
+      return {
+        id: item.id,
+        name: item.name,
+        lvl: item.lvl,
+        categoryId: item.categoryId,
+        category: item.category ?? null,
+        xpPerUnit,
+        unitPrice: unitPrice != null && !Number.isNaN(unitPrice) ? unitPrice : null,
+        xpPerPrice,
+      };
+    }).filter((r) => r.xpPerPrice != null && r.xpPerPrice > 0);
+
+    rows.sort((a, b) => b.xpPerPrice - a.xpPerPrice);
+    res.json(rows.slice(0, limit));
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
