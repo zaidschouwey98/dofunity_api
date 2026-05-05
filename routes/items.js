@@ -334,11 +334,87 @@ router.get('/runes', async (req, res) => {
   }
 });
 
-/** Ressources avec XP/unité et dernier prix moyen ; tri XP/prix décroissant (plus rentables en premier). */
+/**
+ * Référence familier 1 → 100 : « 359 virgule 184 » croquettes = 359.184 (décimal), pas 359184.
+ * 179592 XP ÷ 359.184 = 500 XP / croquette (aligné avec item_xp.txt pour la croquette).
+ * Les XP du fichier = XP familier par unité pour chaque ressource.
+ */
+const FAMILIER_100_CROQUETTE_UNITS = 359.184;
+const FAMILIER_100_TOTAL_PET_XP = 179592;
+const CROQUETTE_ENRICHIE_NAME = 'Croquette enrichie';
+/** Fallback si l’item n’est pas en base ou xpPerUnit absent (valeur habituelle dans item_xp.txt). */
+const CROQUETTE_FILE_XP_FALLBACK = 500;
+
+/** Ressources avec XP/unité et dernier prix moyen ; comparaison coût vs parcours 100 % croquettes. */
 router.get('/resources/profitability', async (req, res) => {
   try {
     const parsed = parseInt(req.query.limit, 10);
     const limit = Math.min(parsed > 0 ? parsed : 800, 5000);
+
+    const manualCroqRaw =
+      req.query.croquettePriceKamas ?? req.query.croquettePrice ?? '';
+    const manualCroqParsed = parseFloat(
+      String(manualCroqRaw).replace(/\s/g, '').replace(',', '.')
+    );
+    const manualCroquettePrice =
+      Number.isFinite(manualCroqParsed) && manualCroqParsed > 0
+        ? manualCroqParsed
+        : null;
+
+    const budgetRaw =
+      req.query.familier100BudgetKamas ?? req.query.budgetKamas ?? '';
+    const budgetParsed = parseFloat(
+      String(budgetRaw).replace(/\s/g, '').replace(',', '.')
+    );
+    const familier100BudgetKamas =
+      Number.isFinite(budgetParsed) && budgetParsed > 0 ? budgetParsed : null;
+
+    const croquetteItem = await Item.findOne({
+      where: { name: CROQUETTE_ENRICHIE_NAME },
+      attributes: ['id', 'name', 'xpPerUnit'],
+      include: [
+        {
+          model: ItemsAveragePrice,
+          as: 'averagePrices',
+          attributes: ['averagePrice'],
+          limit: 1,
+          order: [['createdAt', 'DESC']],
+        },
+      ],
+    });
+
+    const croquetteXpRaw = croquetteItem?.get('xpPerUnit');
+    const croquetteFileXp =
+      croquetteXpRaw != null && String(croquetteXpRaw).trim() !== ''
+        ? parseFloat(String(croquetteXpRaw))
+        : CROQUETTE_FILE_XP_FALLBACK;
+
+    const croqAvg = croquetteItem?.averagePrices?.[0]?.averagePrice;
+    const croquetteUnitPriceHdv =
+      croqAvg != null && croqAvg !== ''
+        ? parseFloat(String(croqAvg))
+        : null;
+
+    let croquettePriceSource = null;
+    let croquetteUnitPriceUsed = null;
+    if (manualCroquettePrice != null) {
+      croquetteUnitPriceUsed = manualCroquettePrice;
+      croquettePriceSource = 'manuel';
+    } else if (
+      croquetteUnitPriceHdv != null &&
+      !Number.isNaN(croquetteUnitPriceHdv) &&
+      croquetteUnitPriceHdv > 0
+    ) {
+      croquetteUnitPriceUsed = croquetteUnitPriceHdv;
+      croquettePriceSource = 'hdv';
+    }
+
+    const costFullCroquettePathKamas =
+      croquetteUnitPriceUsed != null &&
+      !Number.isNaN(croquetteUnitPriceUsed) &&
+      croquetteUnitPriceUsed > 0
+        ? FAMILIER_100_CROQUETTE_UNITS * croquetteUnitPriceUsed
+        : null;
 
     const items = await Item.findAll({
       where: { xpPerUnit: { [Op.not]: null } },
@@ -384,6 +460,61 @@ router.get('/resources/profitability', async (req, res) => {
           ? xpPerUnit / unitPrice
           : null;
 
+      /** Même 179592 XP familier : unités = total XP ÷ (XP familier / unité dans le fichier). */
+      let unitsForSameFamilierProgress = null;
+      let costSameFamilierProgressKamas = null;
+      let benefitVsCroquettesKamas = null;
+      /**
+       * Plafond prix / u si tu ne veux pas dépasser un budget total B pour le 1→100 :
+       * (179592/xp) * P ≤ B  ⇒  P_max = B * xp / 179592.
+       */
+      let maxUnitPriceForBudgetKamas = null;
+      if (
+        xpPerUnit != null &&
+        !Number.isNaN(xpPerUnit) &&
+        xpPerUnit > 0 &&
+        familier100BudgetKamas != null
+      ) {
+        maxUnitPriceForBudgetKamas =
+          (familier100BudgetKamas * xpPerUnit) / FAMILIER_100_TOTAL_PET_XP;
+      }
+
+      /**
+       * Plafond vs croquettes : (179592/xp) * P_max = 359,184 * P_croq.
+       */
+      let maxProfitableUnitPriceKamas = null;
+
+      if (
+        xpPerUnit != null &&
+        !Number.isNaN(xpPerUnit) &&
+        xpPerUnit > 0 &&
+        croquetteUnitPriceUsed != null &&
+        !Number.isNaN(croquetteUnitPriceUsed) &&
+        croquetteUnitPriceUsed > 0
+      ) {
+        maxProfitableUnitPriceKamas =
+          (FAMILIER_100_CROQUETTE_UNITS *
+            croquetteUnitPriceUsed *
+            xpPerUnit) /
+          FAMILIER_100_TOTAL_PET_XP;
+      }
+
+      if (
+        xpPerUnit != null &&
+        !Number.isNaN(xpPerUnit) &&
+        xpPerUnit > 0 &&
+        unitPrice != null &&
+        !Number.isNaN(unitPrice) &&
+        unitPrice > 0
+      ) {
+        unitsForSameFamilierProgress = FAMILIER_100_TOTAL_PET_XP / xpPerUnit;
+        costSameFamilierProgressKamas = unitsForSameFamilierProgress * unitPrice;
+        if (costFullCroquettePathKamas != null) {
+          benefitVsCroquettesKamas =
+            costFullCroquettePathKamas - costSameFamilierProgressKamas;
+        }
+      }
+
       return {
         id: item.id,
         name: item.name,
@@ -393,11 +524,44 @@ router.get('/resources/profitability', async (req, res) => {
         xpPerUnit,
         unitPrice: unitPrice != null && !Number.isNaN(unitPrice) ? unitPrice : null,
         xpPerPrice,
+        unitsForSameFamilierProgress,
+        costSameFamilierProgressKamas,
+        benefitVsCroquettesKamas,
+        maxProfitableUnitPriceKamas,
+        maxUnitPriceForBudgetKamas,
       };
     }).filter((r) => r.xpPerPrice != null && r.xpPerPrice > 0);
 
-    rows.sort((a, b) => b.xpPerPrice - a.xpPerPrice);
-    res.json(rows.slice(0, limit));
+    rows.sort((a, b) => {
+      const ba = a.benefitVsCroquettesKamas;
+      const bb = b.benefitVsCroquettesKamas;
+      if (ba != null && bb != null && ba !== bb) return bb - ba;
+      if (ba != null && bb == null) return -1;
+      if (ba == null && bb != null) return 1;
+      return b.xpPerPrice - a.xpPerPrice;
+    });
+
+    res.json({
+      reference: {
+        croquetteItemId: croquetteItem?.id ?? null,
+        croquetteName: CROQUETTE_ENRICHIE_NAME,
+        croquetteFileXpPerUnit: croquetteFileXp,
+        croquetteUnitPriceHdv:
+          croquetteUnitPriceHdv != null && !Number.isNaN(croquetteUnitPriceHdv)
+            ? croquetteUnitPriceHdv
+            : null,
+        croquetteUnitPriceUsed:
+          croquetteUnitPriceUsed != null && !Number.isNaN(croquetteUnitPriceUsed)
+            ? croquetteUnitPriceUsed
+            : null,
+        croquettePriceSource,
+        croquetteUnitsForFamilier100: FAMILIER_100_CROQUETTE_UNITS,
+        familier100TotalPetXp: FAMILIER_100_TOTAL_PET_XP,
+        familier100BudgetKamas,
+        costFullCroquettePathKamas,
+      },
+      rows: rows.slice(0, limit),
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
