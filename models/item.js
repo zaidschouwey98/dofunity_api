@@ -10,6 +10,7 @@ module.exports = (sequelize, DataTypes) => {
       // Un item a plusieurs prix moyens
       this.hasMany(models.ItemsAveragePrice, { foreignKey: 'itemId',as: 'averagePrices' });
       this.hasMany(models.ExactPrice, { foreignKey: 'itemId', as: 'exactPrices' });
+      this.hasOne(models.BreakAttempt, { foreignKey: 'itemId', as: 'breakAttempt' });
       // Un item peut être lié à plusieurs recettes
       // Un objet peut être inclus dans plusieurs recettes
       this.belongsToMany(models.Recipe, {

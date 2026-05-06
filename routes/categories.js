@@ -1,11 +1,23 @@
 const express = require('express');
 const router = express.Router();
-const { Category, Item } = require('../models');
+const { Category, Item, RootCategory } = require('../models');
 
 // GET all categories
 router.get('/', async (req, res) => {
   try {
-    const categories = await Category.findAll();
+    const includeRoot =
+      req.query.includeRoot === '1' || req.query.includeRoot === 'true';
+    const findOptions = {};
+    if (includeRoot) {
+      findOptions.include = [
+        {
+          model: RootCategory,
+          as: 'rootCategory',
+          attributes: ['id', 'name'],
+        },
+      ];
+    }
+    const categories = await Category.findAll(findOptions);
     res.json(categories);
   } catch (err) {
     res.status(500).json({ error: err.message });

@@ -1,8 +1,82 @@
 const express = require('express');
 const router = express.Router();
-const { ItemCharacteristic,Characteristic, CharacteristicRune , Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice } = require('../models');
+const { ItemCharacteristic,Characteristic, CharacteristicRune , Item, ItemRecipe, Recipe, Category, ItemsAveragePrice, RootCategory, ExactPrice, BreakAttempt } = require('../models');
 const { sequelize } = require('../models'); // Importez Sequelize depuis models/index.js
 const { where, Op } = require('sequelize');
+
+/** Includes identiques à la route équipements (page brisage : recettes + caracs + runes). */
+const equipmentBreakIncludes = [
+  {
+    model: Recipe,
+    as: 'ResultRecipes',
+    include: [
+      {
+        model: ItemRecipe,
+        as: 'Ingredients',
+        include: [
+          {
+            model: Item,
+            as: 'Ingredient',
+            include: [
+              {
+                model: ItemsAveragePrice,
+                as: 'averagePrices',
+                attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
+                limit: 1,
+                order: [['createdAt', 'DESC']],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+  {
+    model: Category,
+    as: 'category',
+    attributes: ['id', 'name'],
+    include: [
+      {
+        model: RootCategory,
+        as: 'rootCategory',
+        attributes: ['id', 'name'],
+      },
+    ],
+  },
+  {
+    model: ItemCharacteristic,
+    as: 'characteristics',
+    include: [
+      {
+        model: Characteristic,
+        as: 'characteristic',
+        attributes: ['id', 'name'],
+        include: [
+          {
+            model: CharacteristicRune,
+            as: 'runes',
+            include: [
+              {
+                model: Item,
+                as: 'rune',
+                attributes: ['id', 'name'],
+                include: [
+                  {
+                    model: ItemsAveragePrice,
+                    as: 'averagePrices',
+                    attributes: ['averagePrice'],
+                    limit: 1,
+                    order: [['createdAt', 'DESC']],
+                  },
+                ],
+              },
+            ],
+          },
+        ],
+      },
+    ],
+  },
+];
 
 // GET all items
 router.get('/', async (req, res) => {
@@ -92,6 +166,41 @@ router.get('/', async (req, res) => {
   }
 });
 
+/** Items d'équipement pour une liste de types (catégories) — utile multi-sélection côté front. */
+router.get('/equipments/by-category-ids', async (req, res) => {
+  try {
+    const raw = req.query.categoryIds ?? req.query.ids;
+    if (raw == null || String(raw).trim() === '') {
+      return res.status(400).json({
+        error: "Paramètre requis : categoryIds (ids séparés par des virgules, ex. 1,2,10).",
+      });
+    }
+
+    const categoryIds = String(raw)
+      .split(',')
+      .map((s) => parseInt(s.trim(), 10))
+      .filter((n) => Number.isInteger(n) && n > 0);
+
+    if (categoryIds.length === 0) {
+      return res.status(400).json({ error: 'Aucun id de catégorie valide.' });
+    }
+
+    const offset = parseInt(req.query.offset, 10) || 0;
+    const limit = parseInt(req.query.limit, 10) || 500;
+
+    const items = await Item.findAll({
+      where: { categoryId: { [Op.in]: categoryIds } },
+      offset,
+      limit,
+      include: equipmentBreakIncludes,
+    });
+
+    res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 router.get('/equipments/:id', async (req, res) => {
   try {
     // Récupérer les paramètres `offset` et `limit` de la requête
@@ -118,78 +227,7 @@ router.get('/equipments/:id', async (req, res) => {
       where: {
         categoryId: categories,
       },
-      include: [
-        {
-          model: Recipe,
-          as: 'ResultRecipes',
-          include: [
-            {
-              model: ItemRecipe,
-              as: 'Ingredients',
-              include: [
-                {
-                  model: Item,
-                  as: 'Ingredient',
-                  include: [
-                    {
-                      model: ItemsAveragePrice,
-                      as: 'averagePrices',
-                      attributes: ['id', 'averagePrice', 'createdAt', 'updatedAt'],
-                      limit: 1,
-                      order: [['createdAt', 'DESC']],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-        {
-          model: Category,
-          as: 'category', // Alias défini dans `Item`
-          attributes: ['id', 'name'], // Champs nécessaires de `Category`
-          include: [
-            {
-              model: RootCategory,
-              as: 'rootCategory',
-              attributes: ['id', 'name'], // Champs nécessaires de `RootCategory`
-            },
-          ],
-        },
-        {
-          model: ItemCharacteristic,
-          as: 'characteristics',
-          include: [
-            {
-              model: Characteristic,
-              as: 'characteristic',
-              attributes: ['id', 'name'],
-              include: [
-                {
-                  model: CharacteristicRune,
-                  as: 'runes',
-                  include: [
-                    {
-                      model: Item,
-                      as: 'rune',
-                      attributes: ['id', 'name'], // Charger 'density'
-                      include: [
-                        {
-                          model: ItemsAveragePrice,
-                          as: 'averagePrices',
-                          attributes: ['averagePrice'],
-                          limit: 1,
-                          order: [['createdAt', 'DESC']],
-                        },
-                      ],
-                    },
-                  ],
-                },
-              ],
-            },
-          ],
-        },
-      ],
+      include: equipmentBreakIncludes,
     });
     res.json(items);
   } catch (err) {
@@ -329,6 +367,86 @@ router.get('/runes', async (req, res) => {
     });
 
     res.json(items);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.get('/break-attempts', async (req, res) => {
+  try {
+    const itemIdsRaw = req.query.itemIds;
+    const where = {};
+
+    if (itemIdsRaw) {
+      const itemIds = String(itemIdsRaw)
+        .split(',')
+        .map((id) => parseInt(id.trim(), 10))
+        .filter((id) => Number.isInteger(id) && id > 0);
+
+      if (itemIds.length === 0) {
+        return res.json([]);
+      }
+      where.itemId = { [Op.in]: itemIds };
+    }
+
+    const attempts = await BreakAttempt.findAll({
+      where,
+      attributes: ['itemId', 'itemBroken', 'attemptedAt', 'observedCoeff', 'updatedAt'],
+    });
+
+    res.json(attempts);
+  } catch (err) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+router.post('/:id/break-attempt', async (req, res) => {
+  try {
+    const itemId = parseInt(req.params.id, 10);
+    if (!Number.isInteger(itemId) || itemId <= 0) {
+      return res.status(400).json({ error: 'Invalid item id' });
+    }
+
+    const item = await Item.findByPk(itemId, { attributes: ['id'] });
+    if (!item) {
+      return res.status(404).json({ error: 'Item not found' });
+    }
+
+    const payload = {
+      itemId,
+      itemBroken: Boolean(req.body.itemBroken),
+      attemptedAt: req.body.attemptedAt ? new Date(req.body.attemptedAt) : null,
+      observedCoeff:
+        req.body.observedCoeff === '' ||
+        req.body.observedCoeff === null ||
+        req.body.observedCoeff === undefined
+          ? null
+          : Number(req.body.observedCoeff),
+    };
+
+    if (payload.attemptedAt && Number.isNaN(payload.attemptedAt.getTime())) {
+      return res.status(400).json({ error: 'Invalid attemptedAt value' });
+    }
+    if (payload.observedCoeff !== null && Number.isNaN(payload.observedCoeff)) {
+      return res.status(400).json({ error: 'Invalid observedCoeff value' });
+    }
+
+    const [attempt, created] = await BreakAttempt.findOrCreate({
+      where: { itemId },
+      defaults: payload,
+    });
+
+    if (!created) {
+      await attempt.update(payload);
+    }
+
+    res.json({
+      itemId: attempt.itemId,
+      itemBroken: attempt.itemBroken,
+      attemptedAt: attempt.attemptedAt,
+      observedCoeff: attempt.observedCoeff,
+      updatedAt: attempt.updatedAt,
+    });
   } catch (err) {
     res.status(500).json({ error: err.message });
   }
